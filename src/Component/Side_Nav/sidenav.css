@@ -1,0 +1,41 @@
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  color: grey;
+  border-bottom: 1px solid Black;
+}
+a:hover {
+  text-decoration: none;
+}
+ul.menu li a:before,
+ul.menu li .item:before,
+ul.menu li .separator:before {
+  content: "\2022";
+  font-family: FontAwesome;
+  margin-right: 10px;
+  display: inline;
+  vertical-align: middle;
+  font-size: 2.5em;
+  font-weight: normal;
+}
+ul {
+  list-style: none;
+}
+.navbar-item {
+  transform: translate(35px, 30px);
+}
+#items {
+  font-size: 20px;
+  transform: translate(40px, 8px);
+  padding: 5px;
+}
+#inv {
+  font-size: 30px;
+}
+#ven {
+  font-size: 30px;
+  transform: translate(30px);
+}

@@ -2,10 +2,10 @@ a {
   text-decoration: none;
   color: grey;
 }
-
 a:hover {
   color: grey;
   border-bottom: 1px solid Black;
+  text-decoration: none;
 }
 a:hover {
   text-decoration: none;
@@ -24,18 +24,17 @@ ul.menu li .separator:before {
 ul {
   list-style: none;
 }
-.navbar-item {
-  transform: translate(35px, 30px);
-}
+
 #items {
   font-size: 20px;
-  transform: translate(40px, 8px);
-  padding: 5px;
+  transform: translate(40px, 15px);
 }
+
 #inv {
   font-size: 30px;
 }
-#ven {
-  font-size: 30px;
-  transform: translate(30px);
+
+.p-2 {
+  padding: 5px;
+  transform: translate(60px, 20px);
 }

@@ -3,18 +3,18 @@ import "./Vendor.css";
 class Vendor extends Component {
   render() {
     return (
-      <div class="content">
+      <div className="content">
         <h2>Vendor PassCodes</h2>
         <hr id="break" />
         <h4>AWS</h4>
-        <table id="t_1" class="table table-striped">
+        <table id="t_1" className="table table-striped">
           <thead>
             <tr>
               <th>Username</th>
               <th>
                 <input
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="Enter email"
@@ -23,7 +23,7 @@ class Vendor extends Component {
               <th>
                 <input
                   type="password"
-                  class="form-control"
+                  className="form-control"
                   id="exampleInputPassword1"
                   placeholder="Password"
                 />
@@ -36,7 +36,7 @@ class Vendor extends Component {
               <th>
                 <input
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="Enter email"
@@ -45,7 +45,7 @@ class Vendor extends Component {
               <th>
                 <input
                   type="password"
-                  class="form-control"
+                  className="form-control"
                   id="exampleInputPassword1"
                   placeholder="Password"
                 />
@@ -54,14 +54,14 @@ class Vendor extends Component {
           </tbody>
         </table>
         <h4>GoDaddy</h4>
-        <table class="table table-striped">
+        <table className="table table-striped">
           <thead>
             <tr>
               <th>Username</th>
               <th>
                 <input
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="Enter email"
@@ -70,7 +70,7 @@ class Vendor extends Component {
               <th>
                 <input
                   type="password"
-                  class="form-control"
+                  className="form-control"
                   id="exampleInputPassword1"
                   placeholder="Password"
                 />
@@ -83,7 +83,7 @@ class Vendor extends Component {
               <th>
                 <input
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="Enter email"
@@ -92,7 +92,7 @@ class Vendor extends Component {
               <th>
                 <input
                   type="password"
-                  class="form-control"
+                  className="form-control"
                   id="exampleInputPassword1"
                   placeholder="Password"
                 />
@@ -105,20 +105,20 @@ class Vendor extends Component {
             <button
               type="button"
               id="successButton"
-              class="btn-multiple-state  mb-3   btn btn-primary"
+              className="btn-multiple-state  mb-3   btn btn-primary"
             >
-              <span class="spinner d-inline-block">
-                <span class="bounce1" />
-                <span class="bounce2" />
-                <span class="bounce3" />
+              <span className="spinner d-inline-block">
+                <span className="bounce1" />
+                <span className="bounce2" />
+                <span className="bounce3" />
               </span>
-              <span class="icon success">
-                <i class="simple-icon-check" />
+              <span className="icon success">
+                <i className="simple-icon-check" />
               </span>
-              <span class="icon fail">
-                <i class="simple-icon-exclamation" />
+              <span className="icon fail">
+                <i className="simple-icon-exclamation" />
               </span>
-              <span class="label">
+              <span className="label">
                 <span>Submit</span>
               </span>
             </button>

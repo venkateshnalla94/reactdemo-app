@@ -3,7 +3,7 @@ a {
   color: grey;
 }
 a:hover {
-  color: grey;
+  color: whitesmoke;
   border-bottom: 1px solid Black;
   text-decoration: none;
 }
@@ -35,6 +35,13 @@ ul {
 }
 
 .p-2 {
-  padding: 5px;
+  padding: 20px;
   transform: translate(60px, 20px);
+}
+#page {
+  height: 790px;
+  width: 360px;
+}
+.navbar-nav {
+  margin-top: 0px;
 }

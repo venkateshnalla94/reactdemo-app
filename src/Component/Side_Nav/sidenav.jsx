@@ -4,8 +4,8 @@ class sidenav extends Component {
   render() {
     return (
       <div>
-        <div className="container">
-          <nav className="navbar bg-primary">
+        <div className="container fluid" id="page">
+          <nav className="navbar ">
             <ul className="navbar-nav">
               <li className="navbar-item">
                 <div className="d-flex flex-column mb-3">
@@ -35,11 +35,6 @@ class sidenav extends Component {
                 </div>
               </li>
             </ul>
-            <div className="container">
-              <a className="nav-link" href="#" id="inv">
-                Vendor Passcodes
-              </a>
-            </div>
           </nav>
         </div>
       </div>

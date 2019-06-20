@@ -1,16 +1,36 @@
-.content{
-    padding-top: 20px;
-    padding-right: 100px;
+#break {
+  border-top: 4px solid #bbbbbb;
 }
-#break{
-border-top: 4px solid #bbbbbb;
+.table-striped {
+  padding: 100px;
 }
-.table-striped{
-    padding: 100px;
+#button {
+  color: black;
+  float: right;
+  padding-top: 10px;
+  padding: 5px;
 }
-#button{
-   color: black;
- float: right;
- padding-top: 10px;
- padding:5px;
+.h2 {
+  text-align: center;
+  border: dotted;
+}
+#ven {
+  color: black;
+  display: inline;
+}
+#ven {
+  position: absolute;
+  left: 0;
+  top: 0%;
+  width: 100%;
+  text-align: center;
+}
+.container {
+  background-color: white !important;
+}
+.huhu {
+  border-style: dashed;
+  border: 1px solid #333;
+  padding: 7px 20px;
+  border-radius: 100px;
 }

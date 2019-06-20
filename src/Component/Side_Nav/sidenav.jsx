@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./sidenav.css";
+import Button from "@material-ui/core/Button";
+
 class sidenav extends Component {
   render() {
     return (
@@ -36,6 +38,11 @@ class sidenav extends Component {
               </li>
             </ul>
           </nav>
+        </div>
+        <div className="container-view">
+          <Button variant="contained" color="primary">
+            <p>Good Morning</p>
+          </Button>
         </div>
       </div>
     );

@@ -4,7 +4,11 @@ class Vendor extends Component {
   render() {
     return (
       <div className="content">
-        <h2>Vendor PassCodes</h2>
+        <div className="container">
+          <h2 id="ven">
+            <span className="huhu">Vendor PassCodes</span>
+          </h2>
+        </div>
         <hr id="break" />
         <h4>AWS</h4>
         <table id="t_1" className="table table-striped">

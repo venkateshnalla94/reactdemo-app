@@ -45,3 +45,11 @@ ul {
 .navbar-nav {
   margin-top: 0px;
 }
+.container-view {
+  display: inline;
+  width: 360px;
+}
+.p {
+  display: inline;
+  width: 360px;
+}

@@ -10,53 +10,56 @@ class Vendor extends Component {
           </h2>
         </div>
         <hr id="break" />
-        <h4>AWS</h4>
-        <table id="t_1" className="table table-striped">
-          <thead>
-            <tr>
-              <th>Username</th>
-              <th>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter email"
-                />
-              </th>
-              <th>
-                <input
-                  type="password"
-                  className="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Password"
-                />
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>Username</th>
-              <th>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter email"
-                />
-              </th>
-              <th>
-                <input
-                  type="password"
-                  className="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Password"
-                />
-              </th>
-            </tr>
-          </tbody>
-        </table>
+        <div className="container">
+          <h4>AWS</h4>
+          <table id="t_1" className="table table-striped">
+            <thead>
+              <tr>
+                <th>Username</th>
+                <th>
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                  />
+                </th>
+                <th>
+                  <input
+                    type="password"
+                    className="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Password"
+                  />
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Username</th>
+                <th>
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                  />
+                </th>
+                <th>
+                  <input
+                    type="password"
+                    className="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Password"
+                  />
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <h4>GoDaddy</h4>
         <table className="table table-striped">
           <thead>

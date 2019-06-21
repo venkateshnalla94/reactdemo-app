@@ -1,5 +1,8 @@
 #break {
   border-top: 4px solid #bbbbbb;
+  position: absolute;
+  top: 15%;
+  width: 100%;
 }
 .table-striped {
   padding: 100px;
@@ -30,7 +33,7 @@
 }
 .huhu {
   border-style: dashed;
-  border: 1px solid #333;
+  border: 2px solid #333;
   padding: 7px 20px;
-  border-radius: 100px;
+  border-radius: 50px;
 }

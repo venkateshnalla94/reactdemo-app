@@ -28,6 +28,9 @@ class Usermang extends Component {
           </div>
           <div className="col">
             <div className="row">
+              <h2 id="passcodes">Vendor Passcodes</h2>
+            </div>
+            <div className="row">
               <div className="col">
                 <div className="container">
                   <h4>AWS</h4>

@@ -4,14 +4,22 @@
 #con-col-2 {
   background-color: black !important;
 }
-.a {
-  color: #a4a7ab !important;
-  padding: 5px;
-}
+
 a:hover {
   background-color: white;
 }
 .nav-link {
   display: block;
   padding: 1.5rem 0rem !important;
+}
+#passcodes {
+  text-align: center;
+  position: relative;
+  width: 90%;
+}
+a {
+  color: #808080 !important;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 5px;
 }

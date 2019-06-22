@@ -7,7 +7,25 @@ class Usermang extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="col-sm-2 " s />
+          <div className="col-sm-2 " id="col-2">
+            <div className="container" id="con-col-2">
+              <h2>Inventory</h2>
+              <div className="p-2 bg-black">
+                <a className="nav-link" href="#" id="items">
+                  View items
+                </a>
+                <a className="nav-link" href="#" id="items">
+                  Reserved Inventory
+                </a>
+                <a className="nav-link" href="#" id="items">
+                  Reserved Items
+                </a>
+                <a className="nav-link" href="#" id="items">
+                  Checkedout Items
+                </a>
+              </div>
+            </div>
+          </div>
           <div className="col">
             <div className="row">
               <div className="col">

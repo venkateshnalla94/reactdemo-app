@@ -1,0 +1,17 @@
+#col-2 {
+  background-color: black;
+}
+#con-col-2 {
+  background-color: black !important;
+}
+.a {
+  color: #a4a7ab !important;
+  padding: 5px;
+}
+a:hover {
+  background-color: white;
+}
+.nav-link {
+  display: block;
+  padding: 1.5rem 0rem !important;
+}

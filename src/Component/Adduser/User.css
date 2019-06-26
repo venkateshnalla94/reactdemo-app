@@ -1,0 +1,20 @@
+.huhu {
+  text-align: center;
+  position: relative;
+  width: 90%;
+  padding-top: 5px;
+  border-style: dashed !important;
+  border: 3px #333;
+  border-radius: 0;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-top: 5px;
+}
+table {
+  border-collapse: collapse;
+  width: 90% !important;
+}

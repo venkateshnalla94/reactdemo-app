@@ -7,6 +7,7 @@ import sample from "./Component/Working Example/sample";
 import Usermang from "./Component/UserManagment/Usermang";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "@material-ui/core/Button";
+import User from "./Component/Adduser/User";
 
 class App extends Component {
   render() {
@@ -14,10 +15,11 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Route path="/vendor" component={Vendor} exact />
-          <Route path="/" component={Welcome_View} exact />
+          <Route path="/" component={Usermang} exact />
           <Route path="/sidenav" component={sidenav} exact />
           <Route path="/sample" component={sample} exact />
           <Route path="/Usermangment" component={Usermang} exact />
+          <Route path="/User" component={User} exact />
         </div>
       </BrowserRouter>
     );

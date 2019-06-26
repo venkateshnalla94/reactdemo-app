@@ -23,6 +23,9 @@ class Usermang extends Component {
                 <a className="nav-link" href="#" id="items">
                   Checkedout Items
                 </a>
+                <a className="nav-link" href="user" id="items">
+                  User Managment
+                </a>
               </div>
             </div>
           </div>

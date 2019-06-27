@@ -18,3 +18,10 @@ table {
   border-collapse: collapse;
   width: 90% !important;
 }
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+button {
+  transform: translate(265px, 0);
+}

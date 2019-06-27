@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./User.css";
+import Button from "@material-ui/core/Button";
 class User extends Component {
   render() {
     return (
@@ -12,6 +13,16 @@ class User extends Component {
                 Messaging System &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(i.e. user
                 successfully added)
               </h2>
+            </div>
+            <div className="row">
+              <div className="col">
+                <h4>User Managment </h4>
+              </div>
+              <div className="col">
+                <Button variant="contained" color="primary">
+                  <p>Add User</p>
+                </Button>
+              </div>
             </div>
             <div className="row">
               <table className="table table-hover">

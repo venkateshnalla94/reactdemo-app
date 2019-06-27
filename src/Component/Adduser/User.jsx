@@ -19,7 +19,7 @@ class User extends Component {
                 <h4>User Managment </h4>
               </div>
               <div className="col">
-                <Button variant="contained" color="primary">
+                <Button variant="contained" color="primary" href="Userform">
                   <p>Add User</p>
                 </Button>
               </div>

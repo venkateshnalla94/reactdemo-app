@@ -8,7 +8,7 @@ import Usermang from "./Component/UserManagment/Usermang";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "@material-ui/core/Button";
 import User from "./Component/Adduser/User";
-
+import Userform from "./Component/UserForm/Userform";
 class App extends Component {
   render() {
     return (
@@ -20,6 +20,7 @@ class App extends Component {
           <Route path="/sample" component={sample} exact />
           <Route path="/Usermangment" component={Usermang} exact />
           <Route path="/User" component={User} exact />
+          <Route path="/Userform" component={Userform} exact />
         </div>
       </BrowserRouter>
     );

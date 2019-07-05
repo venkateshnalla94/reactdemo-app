@@ -48,9 +48,10 @@ class User extends Component {
                   show={this.state.show}
                   onHide={this.handleClose}
                 >
-                  <Modal.Header closeButton>
+                  <Modal.Header closeButton id="header">
                     <Modal.Title>Modal heading</Modal.Title>
                   </Modal.Header>
+
                   <Modal.Body>
                     <form>
                       <div className="form-row" id="tpad">
@@ -120,7 +121,7 @@ class User extends Component {
                         <div className="form-group col-md-2" />
                         <div className="form-group col-md-6">
                           <h6>Roles</h6>
-                          <div className="form-row">
+                          <div className="form-row" id="rep">
                             <div className="form-group col-md-4">
                               <div className="form-check form-check-inline">
                                 <input
@@ -170,7 +171,7 @@ class User extends Component {
                               </div>
                             </div>
                           </div>
-                          <div className="form-row">
+                          <div className="form-row" id="rep">
                             <div className="form-group col-md-4">
                               <div className="form-check form-check-inline">
                                 <input
@@ -220,7 +221,6 @@ class User extends Component {
                               </div>
                             </div>
                           </div>
-                          <div className="form-row" />
                         </div>
                       </div>
                     </form>

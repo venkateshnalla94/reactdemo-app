@@ -32,3 +32,9 @@ button {
 #footer {
   padding: 1rem 17rem;
 }
+#header {
+  padding-right: 18rem;
+}
+#rep {
+  font-size: 0.64rem;
+}

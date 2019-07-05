@@ -25,3 +25,10 @@ p {
 button {
   transform: translate(265px, 0);
 }
+#butt {
+  background-color: #007bff;
+  color: whitesmoke;
+}
+#footer {
+  padding: 1rem 17rem;
+}

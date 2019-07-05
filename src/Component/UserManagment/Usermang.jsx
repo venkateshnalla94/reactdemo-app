@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Usermang.css";
 import Button from "@material-ui/core/Button";
-
+import { Link } from "react-router-dom";
 class Usermang extends Component {
   render() {
     return (
@@ -11,30 +11,30 @@ class Usermang extends Component {
             <div className="container" id="con-col-2">
               <h2>Inventory</h2>
               <div className="p-2 bg-black">
-                <a className="nav-link" href="#" id="items">
+                <Link className="nav-link" href="#" id="items">
                   View items
-                </a>
-                <a className="nav-link" href="#" id="items">
+                </Link>
+                <Link className="nav-link" href="#" id="items">
                   Reserved Inventory
-                </a>
-                <a className="nav-link" href="#" id="items">
+                </Link>
+                <Link className="nav-link" href="#" id="items">
                   Reserved Items
-                </a>
-                <a className="nav-link" href="#" id="items">
+                </Link>
+                <Link className="nav-link" href="#" id="items">
                   Checkedout Items
-                </a>
+                </Link>
                 <div className="row" />
-                <a className="nav-link" href="#" id="items">
+                <Link className="nav-link" href="#" id="items">
                   <h6>Vendor Passcodes</h6>
-                </a>
+                </Link>
 
                 <h6 id="um">User Managment</h6>
-                <a className="nav-link" href="user" id="items">
+                <Link to="/user" className="nav-link" id="items">
                   User
-                </a>
-                <a className="nav-link" href="#" id="items">
+                </Link>
+                <Link className="nav-link" href="#" id="items">
                   Roles
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -3,6 +3,8 @@ import "./User.css";
 import Button from "@material-ui/core/Button";
 import Modal from "react-bootstrap/Modal";
 import footer from "react-bootstrap/Modal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 class User extends Component {
   constructor(props, context) {
     super(props, context);
@@ -256,7 +258,9 @@ class User extends Component {
                     <td>Account Manager</td>
                     <td>2018.12.21 @ 3:09 p</td>
                     <td>
-                      3 Days <span class="oi oi-pencil" />
+                      3 Days
+                      <FontAwesomeIcon icon={faCoffee} />
+                      <i class="fas fa-camera fa-sm" />
                     </td>
                   </tr>
                 </tbody>

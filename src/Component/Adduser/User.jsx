@@ -4,14 +4,15 @@ import Button from "@material-ui/core/Button";
 import Modal from "react-bootstrap/Modal";
 import footer from "react-bootstrap/Modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faTrash, faPencilAlt } from "@fortawesome/free-solid-svg-icons";
+
 class User extends Component {
   constructor(props, context) {
     super(props, context);
 
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
-
+    this.handleDel = this.handleDel.bind(this);
     this.state = {
       show: false
     };
@@ -22,6 +23,9 @@ class User extends Component {
   }
 
   handleShow() {
+    this.setState({ show: true });
+  }
+  handleDel() {
     this.setState({ show: true });
   }
   render() {
@@ -50,10 +54,6 @@ class User extends Component {
                   show={this.state.show}
                   onHide={this.handleClose}
                 >
-                  <Modal.Header closeButton id="header">
-                    <Modal.Title>Modal heading</Modal.Title>
-                  </Modal.Header>
-
                   <Modal.Body>
                     <form>
                       <div className="form-row" id="tpad">
@@ -248,6 +248,8 @@ class User extends Component {
                     <th>Role's</th>
                     <th>Creation Date</th>
                     <th>Last Login</th>
+                    <th />
+                    <th />
                   </tr>
                 </thead>
                 <tbody>
@@ -257,10 +259,23 @@ class User extends Component {
                     <td>Smith</td>
                     <td>Account Manager</td>
                     <td>2018.12.21 @ 3:09 p</td>
+                    <td>3 Days</td>
                     <td>
-                      3 Days
-                      <FontAwesomeIcon icon={faCoffee} />
-                      <i class="fas fa-camera fa-sm" />
+                      <FontAwesomeIcon
+                        icon={faPencilAlt}
+                        style={{ cursor: "pointer" }}
+                        onClick={this.handleShow}
+                      />
+                    </td>
+                    <td>
+                      <FontAwesomeIcon
+                        icon={faTrash}
+                        style={{ cursor: "pointer" }}
+                        onClick={e =>
+                          window.confirm("PLEASE CONFIRM USER REMOVAL") &&
+                          this.deleteItem(e)
+                        }
+                      />
                     </td>
                   </tr>
                 </tbody>

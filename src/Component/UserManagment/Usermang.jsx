@@ -32,7 +32,7 @@ class Usermang extends Component {
                 <Link to="/user" className="nav-link" id="items">
                   User
                 </Link>
-                <Link className="nav-link" href="#" id="items">
+                <Link to="/addrole" className="nav-link" href="#" id="items">
                   Roles
                 </Link>
               </div>

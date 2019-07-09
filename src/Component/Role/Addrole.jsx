@@ -1,32 +1,39 @@
 import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
 import Modal from "react-bootstrap/Modal";
-import footer from "react-bootstrap/Modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faPencilAlt } from "@fortawesome/free-solid-svg-icons";
-
-import User from "../Adduser/User";
+import "./Addrole.css";
+import Editrole from "./Editrole";
 class Addrole extends Component {
   constructor(props, context) {
     super(props, context);
 
-    this.handleShow = this.handleShow.bind(this);
-    this.handleClose = this.handleClose.bind(this);
     this.handleDel = this.handleDel.bind(this);
+    this.handleModalAddOpen = this.handleModalAddOpen.bind(this);
+    this.handleModalEditOpen = this.handleModalEditOpen.bind(this);
+    this.handleModalAddClose = this.handleModalAddClose.bind(this);
+    this.handleModalEditClose = this.handleModalEditClose.bind(this);
     this.state = {
-      show: false
+      addRoleFlag: false,
+      editRoleFlag: false
     };
   }
 
-  handleClose() {
-    this.setState({ show: false });
-  }
-
-  handleShow() {
-    this.setState({ show: true });
-  }
   handleDel() {
     this.setState({ show: true });
+  }
+  handleModalAddClose() {
+    this.setState({ addRoleFlag: false });
+  }
+  handleModalAddOpen() {
+    this.setState({ addRoleFlag: true });
+  }
+  handleModalEditOpen() {
+    this.setState({ editRoleFlag: true });
+  }
+  handleModalEditClose() {
+    this.setState({ editRoleFlag: false });
   }
   render() {
     return (
@@ -45,15 +52,21 @@ class Addrole extends Component {
                 <h4>Role Managment </h4>
               </div>
               <div className="col">
-                <Button variant="primary" onClick={this.handleShow} id="butt">
+                <Button
+                  variant="primary"
+                  color="primary"
+                  onClick={this.handleModalAddOpen}
+                  id="butt"
+                >
                   ADD Role
                 </Button>
                 <Modal
                   size="lg"
                   className="modal fade bd-example-modal-lg"
-                  show={this.state.show}
-                  onHide={this.handleClose}
+                  show={this.state.addRoleFlag}
+                  onHide={this.handleModalAddClose}
                 >
+                  <Modal.Header closeButton id="close" />
                   <Modal.Body>
                     <form>
                       <div className="form-row" id="tpad">
@@ -96,7 +109,11 @@ class Addrole extends Component {
                     </form>
                   </Modal.Body>
                   <Modal.Footer id="footer">
-                    <Button variant="primary" onClick={this.handleClose}>
+                    <Button
+                      variant="primary"
+                      onClick={this.handleModalAddClose}
+                      color="primary"
+                    >
                       CREATE ROLE
                     </Button>
                   </Modal.Footer>
@@ -128,8 +145,19 @@ class Addrole extends Component {
                       <FontAwesomeIcon
                         icon={faPencilAlt}
                         style={{ cursor: "pointer" }}
-                        onClick={this.handleShow}
+                        onClick={this.handleModalEditOpen}
                       />
+                      <Modal
+                        size="lg"
+                        className="modal fade bd-example-modal-lg"
+                        show={this.state.editRoleFlag}
+                        onHide={this.handleModalEditClose}
+                      >
+                        <Modal.Header closeButton id="close" />
+                        <Modal.Body>
+                          <Editrole />
+                        </Modal.Body>
+                      </Modal>
                     </td>
                     <td>
                       <FontAwesomeIcon

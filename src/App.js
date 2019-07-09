@@ -11,6 +11,7 @@ import Userform from "./Component/UserForm/Userform";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import Addrole from "./Component/Role/Addrole";
+import Editrole from "./Component/Role/Editrole";
 class App extends Component {
   render() {
     return (
@@ -24,6 +25,7 @@ class App extends Component {
           <Route path="/User" component={User} exact />
           <Route path="/Userform" component={Userform} exact />
           <Route path="/Addrole" component={Addrole} exact />
+          <Route path="/Editrole" component={Editrole} exact />
         </div>
       </BrowserRouter>
     );

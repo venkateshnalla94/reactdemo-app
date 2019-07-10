@@ -1,0 +1,14 @@
+.dropdown {
+  width: 100%;
+  transform: translate(-0, 0);
+}
+.dropdown-basic {
+  width: 100%;
+}
+#bbuu {
+  width: 100%;
+}
+.dropdown.button {
+  width: 100%;
+  transform: translate(0, 0);
+}

@@ -6,13 +6,13 @@ import sidenav from "./Component/Side_Nav/sidenav";
 import sample from "./Component/Working Example/sample";
 import Usermang from "./Component/UserManagment/Usermang";
 import "bootstrap/dist/css/bootstrap.min.css";
+import $ from "jquery";
 import User from "./Component/Adduser/User";
 import Userform from "./Component/UserForm/Userform";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import Addrole from "./Component/Role/Addrole";
 import Editrole from "./Component/Role/Editrole";
 import Viewitems from "./Component/Viewitems/Viewitems";
+import Createitem from "./Component/Viewitems/Createitem";
 class App extends Component {
   render() {
     return (
@@ -28,6 +28,7 @@ class App extends Component {
           <Route path="/Addrole" component={Addrole} exact />
           <Route path="/Editrole" component={Editrole} exact />
           <Route path="/Viewitems" component={Viewitems} exact />
+          <Route path="/Createitem" component={Createitem} exact />
         </div>
       </BrowserRouter>
     );

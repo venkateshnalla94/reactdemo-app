@@ -11,7 +11,7 @@ class Usermang extends Component {
             <div className="container" id="con-col-2">
               <h2>Inventory</h2>
               <div className="p-2 bg-black">
-                <Link className="nav-link" href="#" id="items">
+                <Link to="/viewitems" className="nav-link" id="items">
                   View items
                 </Link>
                 <Link className="nav-link" href="#" id="items">

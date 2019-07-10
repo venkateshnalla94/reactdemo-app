@@ -6,7 +6,7 @@ import sidenav from "./Component/Side_Nav/sidenav";
 import sample from "./Component/Working Example/sample";
 import Usermang from "./Component/UserManagment/Usermang";
 import "bootstrap/dist/css/bootstrap.min.css";
-import $ from "jquery";
+// import $ from "jquery";
 import User from "./Component/Adduser/User";
 import Userform from "./Component/UserForm/Userform";
 import Addrole from "./Component/Role/Addrole";

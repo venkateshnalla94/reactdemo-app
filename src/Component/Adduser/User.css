@@ -22,9 +22,6 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-button {
-  transform: translate(265px, 0);
-}
 #butt {
   background-color: #007bff;
   color: whitesmoke;

@@ -1,14 +1,13 @@
-.dropdown {
-  width: 100%;
-  transform: translate(-0, 0);
-}
 .dropdown-basic {
   width: 100%;
 }
 #bbuu {
   width: 100%;
 }
-.dropdown.button {
+
+#top {
+  z-index: 1;
+}
+.dropdown-menu {
   width: 100%;
-  transform: translate(0, 0);
 }

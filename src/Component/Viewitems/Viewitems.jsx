@@ -7,7 +7,26 @@ import {
   faCartPlus
 } from "@fortawesome/free-solid-svg-icons";
 import Modal from "react-bootstrap/Modal";
+import Createitem from "./Createitem";
 class Viewitems extends Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.handleShow = this.handleShow.bind(this);
+    this.handleClose = this.handleClose.bind(this);
+
+    this.state = {
+      show: false
+    };
+  }
+
+  handleClose() {
+    this.setState({ show: false });
+  }
+
+  handleShow() {
+    this.setState({ show: true });
+  }
   render() {
     return (
       <div className="container-fluid">
@@ -31,9 +50,22 @@ class Viewitems extends Component {
             </div>
             <div className="row">
               <div className="col-6" />
-              <div className="col-2">
-                <Button variant="primary">CREATE ITEM</Button>
+              <div className="col-2 justify-content-left">
+                <Button variant="primary" onClick={this.handleShow}>
+                  CREATE ITEM
+                </Button>
               </div>
+              <Modal
+                size="lg"
+                className="modal fade bd-example-modal-lg"
+                show={this.state.show}
+                onHide={this.handleClose}
+              >
+                <Modal.Header closeButton id="close" />
+                <Modal.Body>
+                  <Createitem />
+                </Modal.Body>
+              </Modal>
             </div>
             <div className="row">
               <div className="col-4" />

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./User.css";
 import Button from "@material-ui/core/Button";
 import Modal from "react-bootstrap/Modal";
-import footer from "react-bootstrap/Modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faPencilAlt } from "@fortawesome/free-solid-svg-icons";
 

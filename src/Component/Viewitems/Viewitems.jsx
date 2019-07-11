@@ -51,7 +51,7 @@ class Viewitems extends Component {
             <div className="row">
               <div className="col-6" />
               <div className="col-2 justify-content-left">
-                <Button variant="primary" onClick={this.handleShow}>
+                <Button variant="primary" onClick={this.handleShow} id="buutt">
                   CREATE ITEM
                 </Button>
               </div>
@@ -61,7 +61,7 @@ class Viewitems extends Component {
                 show={this.state.show}
                 onHide={this.handleClose}
               >
-                <Modal.Header closeButton id="close" />
+                <Modal.Header closeButton />
                 <Modal.Body>
                   <Createitem />
                 </Modal.Body>

@@ -1,42 +1,9 @@
 import React, { Component } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
-import "./Createitem.css";
-import Button from "react-bootstrap/Button";
-import $ from "jquery";
-class Createitem extends Component {
-  constructor(props, context) {
-    super(props, context);
 
-    this.handleClose = this.handleClose.bind(this);
-
-    this.state = {
-      show: false
-    };
-  }
-
-  handleClose() {
-    this.setState({ show: false });
-  }
+class Edititem extends Component {
   render() {
     return (
-      //   <div className="container">
-      //     <div className="row justify-content-center">
-      //       <div className="col-sm-8">
-      //         <Dropdown>
-      //           <Dropdown.Toggle variant="success" block>
-      //             Dropdown Button
-      //           </Dropdown.Toggle>
-      //           <Dropdown.Menu>
-      //             <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-      //             <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-      //             <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-      //           </Dropdown.Menu>
-      //         </Dropdown>
-      //       </div>
-      //     </div>
-      //   </div>
-
       <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col">
@@ -120,4 +87,4 @@ class Createitem extends Component {
     );
   }
 }
-export default Createitem;
+export default Edititem;

@@ -8,6 +8,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Modal from "react-bootstrap/Modal";
 import Createitem from "./Createitem";
+import Edititem from "./Edititem";
+import CheckOut from "./CheckOut";
 class Viewitems extends Component {
   constructor(props, context) {
     super(props, context);
@@ -65,6 +67,13 @@ class Viewitems extends Component {
                 <Modal.Body>
                   <Createitem />
                 </Modal.Body>
+                <Modal.Footer>
+                  <div className="form-group col-md-4">
+                    <Button variant="primary" onClick={this.handleClose}>
+                      CREATE ITEM
+                    </Button>
+                  </div>
+                </Modal.Footer>
               </Modal>
             </div>
             <div className="row">
@@ -75,11 +84,11 @@ class Viewitems extends Component {
               <div className="col-1">
                 <p>[Model]</p>
               </div>
-              <div className="col-1">
+              <div className="col-sm-1">
                 <p>[———————]</p>
               </div>
-              <div className="col-1" />
-              <div className="col-0.5">
+              <div className="col-sm-1" />
+              <div className="col-sm-0.5">
                 <p>Sort :</p>
               </div>
               <div className="col-1">
@@ -108,8 +117,8 @@ class Viewitems extends Component {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>iPad Air 2</td>
+                  <tr id="ent">
+                    <td>{this.textbox}</td>
                     <td>CIA-11</td>
                     <td />
                     <td />
@@ -119,19 +128,56 @@ class Viewitems extends Component {
                       <FontAwesomeIcon
                         icon={faCartPlus}
                         style={{ cursor: "pointer" }}
+                        onClick={this.handleShow}
                       />
+                      <Modal
+                        size="lg"
+                        className="modal fade bd-example-modal-lg"
+                        show={this.state.show}
+                        onHide={this.handleClose}
+                      >
+                        <Modal.Header closeButton />
+                        <Modal.Body>
+                          <CheckOut />
+                        </Modal.Body>
+                        <Modal.Footer>
+                          <div className="form-group col-md-4">
+                            <Button
+                              variant="primary"
+                              onClick={this.handleClose}
+                            >
+                              Update
+                            </Button>
+                          </div>
+                        </Modal.Footer>
+                      </Modal>
                     </td>
                     <td>
                       <FontAwesomeIcon
                         icon={faPencilAlt}
                         style={{ cursor: "pointer" }}
+                        onClick={this.handleShow}
                       />
                       <Modal
                         size="lg"
                         className="modal fade bd-example-modal-lg"
+                        show={this.state.show}
+                        onHide={this.handleClose}
                       >
-                        <Modal.Header closeButton id="close" />
-                        <Modal.Body />
+                        <Modal.Header closeButton />
+                        <Modal.Body>
+                          <Edititem />
+                        </Modal.Body>
+                        <Modal.Footer>
+                          <div className="form-group col-md-4">
+                            <Button
+                              variant="primary"
+                              onClick={this.handleClose}
+                            >
+                              Update
+                            </Button>
+                          </div>
+                        </Modal.Footer>
                       </Modal>
                     </td>
                     <td>
@@ -139,9 +185,8 @@ class Viewitems extends Component {
                         icon={faTrash}
                         style={{ cursor: "pointer" }}
                         onClick={e =>
-                          window.confirm(
-                            "PLEASE CONFIRM REMOVAL OF DOD Manager"
-                          ) && this.deleteItem(e)
+                          window.confirm("Please confirm removal of item") &&
+                          this.deleteItem()
                         }
                       />
                     </td>

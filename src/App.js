@@ -13,6 +13,8 @@ import Addrole from "./Component/Role/Addrole";
 import Editrole from "./Component/Role/Editrole";
 import Viewitems from "./Component/Viewitems/Viewitems";
 import Createitem from "./Component/Viewitems/Createitem";
+import Edititem from "./Component/Viewitems/Edititem";
+import CheckOut from "./Component/Viewitems/CheckOut";
 class App extends Component {
   render() {
     return (
@@ -29,6 +31,8 @@ class App extends Component {
           <Route path="/Editrole" component={Editrole} exact />
           <Route path="/Viewitems" component={Viewitems} exact />
           <Route path="/Createitem" component={Createitem} exact />
+          <Route path="/Edititem" component={Edititem} exact />
+          <Route path="/CheckOut" component={CheckOut} exact />
         </div>
       </BrowserRouter>
     );

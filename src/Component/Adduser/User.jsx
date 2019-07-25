@@ -238,7 +238,7 @@ class User extends Component {
               </div>
             </div>
             <div className="row">
-              <table className="table table-hover">
+              <table className="table table-hover" id="tbl">
                 <thead>
                   <tr>
                     <th>Username</th>

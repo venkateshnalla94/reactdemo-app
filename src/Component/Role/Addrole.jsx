@@ -9,7 +9,6 @@ class Addrole extends Component {
   constructor(props, context) {
     super(props, context);
 
-    this.handleDel = this.handleDel.bind(this);
     this.handleModalAddOpen = this.handleModalAddOpen.bind(this);
     this.handleModalEditOpen = this.handleModalEditOpen.bind(this);
     this.handleModalAddClose = this.handleModalAddClose.bind(this);
@@ -20,9 +19,6 @@ class Addrole extends Component {
     };
   }
 
-  handleDel() {
-    this.setState({ show: true });
-  }
   handleModalAddClose() {
     this.setState({ addRoleFlag: false });
   }
@@ -51,15 +47,18 @@ class Addrole extends Component {
               <div className="col">
                 <h4>Role Managment </h4>
               </div>
-              <div className="col">
-                <Button
-                  variant="primary"
-                  color="primary"
-                  onClick={this.handleModalAddOpen}
-                  id="butt"
-                >
-                  ADD Role
-                </Button>
+              <div className="col-md-6">
+                <span className="float-right">
+                  <Button
+                    variant="primary"
+                    color="primary"
+                    onClick={this.handleModalAddOpen}
+                    id="butt"
+                  >
+                    ADD Role
+                  </Button>
+                </span>
+
                 <Modal
                   size="lg"
                   className="modal fade bd-example-modal-lg"
@@ -108,7 +107,7 @@ class Addrole extends Component {
                       <div className="form-row" id="tpad" />
                     </form>
                   </Modal.Body>
-                  <Modal.Footer id="footer">
+                  <Modal.Footer>
                     <Button
                       variant="primary"
                       onClick={this.handleModalAddClose}
@@ -153,7 +152,7 @@ class Addrole extends Component {
                         show={this.state.editRoleFlag}
                         onHide={this.handleModalEditClose}
                       >
-                        <Modal.Header closeButton id="close" />
+                        <Modal.Header closeButton />
                         <Modal.Body>
                           <Editrole />
                         </Modal.Body>

@@ -14,21 +14,37 @@ class Viewitems extends Component {
   constructor(props, context) {
     super(props, context);
 
-    this.handleShow = this.handleShow.bind(this);
-    this.handleClose = this.handleClose.bind(this);
-
+    this.handleEditOpen = this.handleEditOpen.bind(this);
+    this.handleEditClose = this.handleEditClose.bind(this);
+    this.handleCreateItemOpen = this.handleCreateItemOpen.bind(this);
+    this.handleCreateItemClose = this.handleCreateItemClose.bind(this);
+    this.handleCheckoutOpen = this.handleCheckoutOpen.bind(this);
+    this.handleCheckoutClose = this.handleCheckoutClose.bind(this);
     this.state = {
-      show: false
+      editFlag: false,
+      createitemFlag: false,
+      checkoutFlag: false
     };
   }
-
-  handleClose() {
-    this.setState({ show: false });
+  handleEditOpen() {
+    this.setState({ editFlag: true });
+  }
+  handleEditClose() {
+    this.setState({ editFlag: false });
+  }
+  handleCreateItemOpen() {
+    this.setState({ createitemFlag: true });
+  }
+  handleCreateItemClose() {
+    this.setState({ createitemFlag: false });
+  }
+  handleCheckoutOpen() {
+    this.setState({ checkoutFlag: true });
+  }
+  handleCheckoutClose() {
+    this.setState({ checkoutFlag: false });
   }
 
-  handleShow() {
-    this.setState({ show: true });
-  }
   render() {
     return (
       <div className="container-fluid">
@@ -51,17 +67,22 @@ class Viewitems extends Component {
               </div>
             </div>
             <div className="row">
-              <div className="col-6" />
-              <div className="col-2 justify-content-left">
-                <Button variant="primary" onClick={this.handleShow} id="buutt">
-                  CREATE ITEM
-                </Button>
+              <div className="col">
+                <span className="float-right">
+                  <Button
+                    variant="primary"
+                    onClick={this.handleCreateItemOpen}
+                    id="buutt"
+                  >
+                    CREATE ITEM
+                  </Button>
+                </span>
               </div>
               <Modal
                 size="lg"
                 className="modal fade bd-example-modal-lg"
-                show={this.state.show}
-                onHide={this.handleClose}
+                show={this.state.createitemFlag}
+                onHide={this.handleCreateItemClose}
               >
                 <Modal.Header closeButton />
                 <Modal.Body>
@@ -69,7 +90,10 @@ class Viewitems extends Component {
                 </Modal.Body>
                 <Modal.Footer>
                   <div className="form-group col-md-4">
-                    <Button variant="primary" onClick={this.handleClose}>
+                    <Button
+                      variant="primary"
+                      onClick={this.handleCreateItemClose}
+                    >
                       CREATE ITEM
                     </Button>
                   </div>
@@ -128,13 +152,13 @@ class Viewitems extends Component {
                       <FontAwesomeIcon
                         icon={faCartPlus}
                         style={{ cursor: "pointer" }}
-                        onClick={this.handleShow}
+                        onClick={this.handleCheckoutOpen}
                       />
                       <Modal
                         size="lg"
                         className="modal fade bd-example-modal-lg"
-                        show={this.state.show}
-                        onHide={this.handleClose}
+                        show={this.state.checkoutFlag}
+                        onHide={this.handleCheckoutClose}
                       >
                         <Modal.Header closeButton />
                         <Modal.Body>
@@ -144,7 +168,7 @@ class Viewitems extends Component {
                           <div className="form-group col-md-4">
                             <Button
                               variant="primary"
-                              onClick={this.handleClose}
+                              onClick={this.handleCheckoutClose}
                             >
                               Update
                             </Button>
@@ -156,13 +180,13 @@ class Viewitems extends Component {
                       <FontAwesomeIcon
                         icon={faPencilAlt}
                         style={{ cursor: "pointer" }}
-                        onClick={this.handleShow}
+                        onClick={this.handleEditOpen}
                       />
                       <Modal
                         size="lg"
                         className="modal fade bd-example-modal-lg"
-                        show={this.state.show}
-                        onHide={this.handleClose}
+                        show={this.state.editFlag}
+                        onHide={this.handleEditClose}
                       >
                         <Modal.Header closeButton />
                         <Modal.Body>
@@ -172,7 +196,7 @@ class Viewitems extends Component {
                           <div className="form-group col-md-4">
                             <Button
                               variant="primary"
-                              onClick={this.handleClose}
+                              onClick={this.handleEditClose}
                             >
                               Update
                             </Button>

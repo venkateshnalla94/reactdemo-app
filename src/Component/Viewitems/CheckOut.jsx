@@ -9,21 +9,21 @@ class CheckOut extends Component {
         <div className="row justify-content-center">
           <div className="col">
             <div className="form-row" id="tpad">
-              <div className="form-group col-md-6">
+              <div className="form-group col-md-8">
                 <label>
                   <h3>Check Out</h3>
                 </label>
               </div>
 
-              <div className="form-group col-md-2">
+              <div className="form-group col-md-4">
                 <h6> Total Items : XX</h6>
               </div>
             </div>
             <div className="form-row">
-              <div className="form-group col-md-4">
+              <div className="form-group col-md-6">
                 <label>Items Being Checkout for user</label>
               </div>
-              <div className="form-group col-md-4">
+              <div className="form-group col-md-6">
                 <input
                   type="Email"
                   className="form-control"
@@ -32,7 +32,7 @@ class CheckOut extends Component {
               </div>
             </div>
             <div className="form-row">
-              <div className="col-md-8">
+              <div className="col-md-12">
                 <table className="table table-hover">
                   <thead>
                     <tr>

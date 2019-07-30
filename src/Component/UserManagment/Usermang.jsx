@@ -20,7 +20,7 @@ class Usermang extends Component {
                 <Link className="nav-link" href="#" id="items">
                   Reserved Items
                 </Link>
-                <Link className="nav-link" href="#" id="items">
+                <Link to="/Checkedoutitems" className="nav-link" id="items">
                   Checkedout Items
                 </Link>
                 <div className="row" />

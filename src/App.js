@@ -15,6 +15,8 @@ import Viewitems from "./Component/Viewitems/Viewitems";
 import Createitem from "./Component/Viewitems/Createitem";
 import Edititem from "./Component/Viewitems/Edititem";
 import CheckOut from "./Component/Viewitems/CheckOut";
+import Checkedoutitems from "./Component/CheckedOutItems/Checkedoutitems";
+import CheckIn from "./Component/CheckedOutItems/CheckIn";
 class App extends Component {
   render() {
     return (
@@ -33,6 +35,8 @@ class App extends Component {
           <Route path="/Createitem" component={Createitem} exact />
           <Route path="/Edititem" component={Edititem} exact />
           <Route path="/CheckOut" component={CheckOut} exact />
+          <Route path="/Checkedoutitems" component={Checkedoutitems} exact />
+          <Route path="/CheckIn" component={CheckIn} exact />
         </div>
       </BrowserRouter>
     );

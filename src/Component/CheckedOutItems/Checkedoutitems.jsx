@@ -86,9 +86,9 @@ class Checkedoutitems extends Component {
                   <tbody>
                     <tr id="ent">
                       <td>
-                        <Link onClick={this.handleViewOpen}>
+                        <Button onClick={this.handleViewOpen}>
                           bob.lee@cinco.ca
-                        </Link>
+                        </Button>
                         <Modal
                           size="lg"
                           className="modal fade bd-example-modal-lg"

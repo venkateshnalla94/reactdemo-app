@@ -33,9 +33,8 @@ class Addrole extends Component {
   }
   render() {
     return (
-      <div className="container-fluid">
+      <div>
         <div className="row">
-          <div className="col-sm-2" />
           <div className="col">
             <div className="row">
               <h2 className="huhu">
@@ -101,10 +100,6 @@ class Addrole extends Component {
                           />
                         </div>
                       </div>
-                      <div className="form-row" id="tpad" />
-                      <div className="form-row" id="tpad" />
-                      <div className="form-row" id="tpad" />
-                      <div className="form-row" id="tpad" />
                     </form>
                   </Modal.Body>
                   <Modal.Footer>
@@ -176,6 +171,26 @@ class Addrole extends Component {
           </div>
         </div>
       </div>
+
+      /* 
+       <div class= "container">
+       <div class="row">
+          <div class="col-md-4">
+          
+          <......>
+          </div>
+       
+       
+       
+       
+       
+       <div class="col-md-8">
+                        <........>
+          
+          </div>
+       </div>
+
+      */
     );
   }
 }

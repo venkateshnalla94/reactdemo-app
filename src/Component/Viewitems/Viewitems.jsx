@@ -49,7 +49,6 @@ class Viewitems extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="col-sm-2" />
           <div className="col">
             <div className="row">
               <h2 className="huhu">
@@ -142,7 +141,7 @@ class Viewitems extends Component {
                 </thead>
                 <tbody>
                   <tr id="ent">
-                    <td>{this.textbox}</td>
+                    <td>iPad Air 2</td>
                     <td>CIA-11</td>
                     <td />
                     <td />

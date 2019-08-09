@@ -21,10 +21,9 @@ class App extends Component {
         <div>
           <Route path="/" component={Usermang} exact />
           <Route path="/Usermangment" component={Usermang} />
-          <Route path="/User" component={User} exact />
+
           <Route path="/Userform" component={Userform} exact />
           <Route path="/Editrole" component={Editrole} exact />
-          <Route path="/Viewitems" component={Viewitems} exact />
           <Route path="/Createitem" component={Createitem} exact />
           <Route path="/Edititem" component={Edititem} exact />
           <Route path="/CheckOut" component={CheckOut} exact />

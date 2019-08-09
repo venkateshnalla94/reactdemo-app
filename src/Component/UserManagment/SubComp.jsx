@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-
 import Button from "@material-ui/core/Button";
-
 class SubComp extends Component {
   render() {
     return (
@@ -120,7 +118,7 @@ class SubComp extends Component {
           <div className="col">
             <div className="container">
               <Button variant="contained" color="primary">
-                <p>Submit</p>
+                Submit
               </Button>
             </div>
           </div>

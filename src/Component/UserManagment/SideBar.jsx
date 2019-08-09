@@ -12,7 +12,7 @@ class SideBar extends Component {
         <div id="con-col-2">
           <h2>Inventory</h2>
           <div className="p-2 bg-black">
-            <Link to="/viewitems" className="nav-link">
+            <Link to="/Usermangment/Viewitems" className="nav-link">
               View items
             </Link>
             <Link className="nav-link" to="/">
@@ -21,16 +21,16 @@ class SideBar extends Component {
             <Link className="nav-link" to="/">
               Reserved Items
             </Link>
-            <Link to="/Checkedoutitems" className="nav-link">
+            <Link to="/Usermangment/Checkedoutitems" className="nav-link">
               Checkedout Items
             </Link>
             <div className="row" />
-            <Link to="/SubComp" className="nav-link">
+            <Link to="/Usermangment/SubComp" className="nav-link">
               <h6>Vendor Passcodes</h6>
             </Link>
 
             <h6 id="um">User Managment</h6>
-            <Link to="/user" className="nav-link">
+            <Link to="/Usermangment/user" className="nav-link">
               User
             </Link>
             <Link to="/Usermangment/Addrole" className="nav-link">

@@ -32,7 +32,6 @@ class Checkedoutitems extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="col-sm-2" />
           <div className="col">
             <div className="row">
               <h2 className="huhu">

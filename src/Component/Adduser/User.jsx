@@ -29,9 +29,8 @@ class User extends Component {
   }
   render() {
     return (
-      <div className="container-fluid">
+      <div>
         <div className="row">
-          <div className="col-sm-2" />
           <div className="col">
             <div className="row">
               <h2 className="huhu">
@@ -43,10 +42,13 @@ class User extends Component {
               <div className="col">
                 <h4>User Managment </h4>
               </div>
-              <div className="col">
-                <Button variant="primary" onClick={this.handleShow} id="butt">
-                  ADD USER
-                </Button>
+              <div className="col-md-6">
+                <span className="float-right">
+                  <Button variant="primary" onClick={this.handleShow} id="butt">
+                    ADD USER
+                  </Button>
+                </span>
+
                 <Modal
                   size="lg"
                   className="modal fade bd-example-modal-lg"
@@ -238,7 +240,7 @@ class User extends Component {
               </div>
             </div>
             <div className="row">
-              <table className="table table-hover" id="tbl">
+              <table className="table table-hover">
                 <thead>
                   <tr>
                     <th>Username</th>

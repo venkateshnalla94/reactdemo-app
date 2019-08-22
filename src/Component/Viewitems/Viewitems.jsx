@@ -10,6 +10,7 @@ import Modal from "react-bootstrap/Modal";
 import Createitem from "./Createitem";
 import Edititem from "./Edititem";
 import CheckOut from "./CheckOut";
+import axios from "axios";
 class Viewitems extends Component {
   constructor(props, context) {
     super(props, context);
@@ -23,7 +24,8 @@ class Viewitems extends Component {
     this.state = {
       editFlag: false,
       createitemFlag: false,
-      checkoutFlag: false
+      checkoutFlag: false,
+      cons: []
     };
   }
   handleEditOpen() {
@@ -44,8 +46,87 @@ class Viewitems extends Component {
   handleCheckoutClose() {
     this.setState({ checkoutFlag: false });
   }
+  async componentDidMount() {
+    await axios
+      .get("https://jsonplaceholder.typicode.com/users")
+      .then(response => {
+        this.setState({
+          cons: response.data
+        });
+      });
+    console.log(this.state.cons);
+  }
 
   render() {
+    const table_rows = this.state.cons.map((data, index) => {
+      return (
+        <tr key={data.id}>
+          <td>{data.name}</td>
+          <td>{data.username}</td>
+          <td>{data.website}</td>
+          <td>
+            <FontAwesomeIcon
+              icon={faCartPlus}
+              style={{ cursor: "pointer" }}
+              onClick={this.handleCheckoutOpen}
+            />
+            <Modal
+              size="lg"
+              className="modal fade bd-example-modal-lg"
+              show={this.state.checkoutFlag}
+              onHide={this.handleCheckoutClose}
+            >
+              <Modal.Header closeButton />
+              <Modal.Body>
+                <CheckOut />
+              </Modal.Body>
+              <Modal.Footer>
+                <div className="form-group col-md-4">
+                  <Button variant="primary" onClick={this.handleCheckoutClose}>
+                    Update
+                  </Button>
+                </div>
+              </Modal.Footer>
+            </Modal>
+          </td>
+          <td>
+            <FontAwesomeIcon
+              icon={faPencilAlt}
+              style={{ cursor: "pointer" }}
+              onClick={this.handleEditOpen}
+            />
+            <Modal
+              size="lg"
+              className="modal fade bd-example-modal-lg"
+              show={this.state.editFlag}
+              onHide={this.handleEditClose}
+            >
+              <Modal.Header closeButton />
+              <Modal.Body>
+                <Edititem />
+              </Modal.Body>
+              <Modal.Footer>
+                <div className="form-group col-md-4">
+                  <Button variant="primary" onClick={this.handleEditClose}>
+                    Update
+                  </Button>
+                </div>
+              </Modal.Footer>
+            </Modal>
+          </td>
+          <td>
+            <FontAwesomeIcon
+              icon={faTrash}
+              style={{ cursor: "pointer" }}
+              onClick={e =>
+                window.confirm("Please confirm removal of item") &&
+                this.deleteItem()
+              }
+            />
+          </td>
+        </tr>
+      );
+    });
     return (
       <div className="container-fluid">
         <div className="row">
@@ -128,93 +209,15 @@ class Viewitems extends Component {
               <table className="table table-hover">
                 <thead>
                   <tr>
-                    <th>Model</th>
-                    <th>SKU</th>
-                    <th />
-                    <th />
-                    <th>Location</th>
-                    <th>Condition</th>
-                    <td />
-                    <td />
-                    <td />
+                    <th>name</th>
+                    <th>username</th>
+                    <th>website</th>
+                    <th>Cart</th>
+                    <td>Edit</td>
+                    <td>Delete</td>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr id="ent">
-                    <td>iPad Air 2</td>
-                    <td>CIA-11</td>
-                    <td />
-                    <td />
-                    <td>On-Site</td>
-                    <td>Used / Good</td>
-                    <td>
-                      <FontAwesomeIcon
-                        icon={faCartPlus}
-                        style={{ cursor: "pointer" }}
-                        onClick={this.handleCheckoutOpen}
-                      />
-                      <Modal
-                        size="lg"
-                        className="modal fade bd-example-modal-lg"
-                        show={this.state.checkoutFlag}
-                        onHide={this.handleCheckoutClose}
-                      >
-                        <Modal.Header closeButton />
-                        <Modal.Body>
-                          <CheckOut />
-                        </Modal.Body>
-                        <Modal.Footer>
-                          <div className="form-group col-md-4">
-                            <Button
-                              variant="primary"
-                              onClick={this.handleCheckoutClose}
-                            >
-                              Update
-                            </Button>
-                          </div>
-                        </Modal.Footer>
-                      </Modal>
-                    </td>
-                    <td>
-                      <FontAwesomeIcon
-                        icon={faPencilAlt}
-                        style={{ cursor: "pointer" }}
-                        onClick={this.handleEditOpen}
-                      />
-                      <Modal
-                        size="lg"
-                        className="modal fade bd-example-modal-lg"
-                        show={this.state.editFlag}
-                        onHide={this.handleEditClose}
-                      >
-                        <Modal.Header closeButton />
-                        <Modal.Body>
-                          <Edititem />
-                        </Modal.Body>
-                        <Modal.Footer>
-                          <div className="form-group col-md-4">
-                            <Button
-                              variant="primary"
-                              onClick={this.handleEditClose}
-                            >
-                              Update
-                            </Button>
-                          </div>
-                        </Modal.Footer>
-                      </Modal>
-                    </td>
-                    <td>
-                      <FontAwesomeIcon
-                        icon={faTrash}
-                        style={{ cursor: "pointer" }}
-                        onClick={e =>
-                          window.confirm("Please confirm removal of item") &&
-                          this.deleteItem()
-                        }
-                      />
-                    </td>
-                  </tr>
-                </tbody>
+                <tbody>{table_rows}</tbody>
               </table>
             </div>
           </div>

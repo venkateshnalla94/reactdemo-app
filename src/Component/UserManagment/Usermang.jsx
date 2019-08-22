@@ -7,7 +7,15 @@ import SideBar from "./SideBar";
 import User from "../Adduser/User";
 import Viewitems from "../Viewitems/Viewitems";
 import Checkedoutitems from "../CheckedOutItems/Checkedoutitems";
+import axios from "axios";
 class Usermang extends Component {
+  constructor() {
+    super();
+    this.state = {
+      gifs: []
+    };
+  }
+
   render() {
     return (
       <div>

@@ -8,6 +8,7 @@ import User from "../Adduser/User";
 import Viewitems from "../Viewitems/Viewitems";
 import Checkedoutitems from "../CheckedOutItems/Checkedoutitems";
 import axios from "axios";
+import Landing_page from "../Landing_Page/Pages/First_Page";
 class Usermang extends Component {
   constructor() {
     super();
@@ -38,6 +39,7 @@ class Usermang extends Component {
                   component={Checkedoutitems}
                   exact
                 />
+
                 <Route path="/Usermangment/SubComp" component={SubComp} exact />
               </Switch>
             </div>

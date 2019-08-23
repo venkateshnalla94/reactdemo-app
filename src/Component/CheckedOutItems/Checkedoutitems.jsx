@@ -9,7 +9,8 @@ import {
 import Modal from "react-bootstrap/Modal";
 import { Link } from "react-router-dom";
 import CheckIn from "./CheckIn";
-
+import axios from "axios";
+import "./check.css";
 class Checkedoutitems extends Component {
   constructor(props, context) {
     super(props, context);
@@ -18,7 +19,8 @@ class Checkedoutitems extends Component {
     this.handleViewClose = this.handleViewClose.bind(this);
 
     this.state = {
-      viewFlag: false
+      viewFlag: false,
+      cons: []
     };
   }
   handleViewOpen() {
@@ -27,8 +29,55 @@ class Checkedoutitems extends Component {
   handleViewClose() {
     this.setState({ viewFlag: false });
   }
-
+  async componentDidMount() {
+    await axios
+      .get("https://jsonplaceholder.typicode.com/users")
+      .then(response => {
+        this.setState({
+          cons: response.data
+        });
+      });
+    console.log(this.state.cons);
+  }
   render() {
+    const tabel_row = this.state.cons.map((data, index) => {
+      return (
+        <tr id="ent">
+          <div className="scrollit">
+            <td className="block">
+              <Button
+                className="btn btn-primary btn-lg btn-block"
+                onClick={this.handleViewOpen}
+              >
+                {data.username}
+              </Button>
+              <Modal
+                size="lg"
+                className="modal fade bd-example-modal-lg"
+                show={this.state.viewFlag}
+                onHide={this.handleViewClose}
+              >
+                <Modal.Header closeButton />
+                <Modal.Body>
+                  <CheckIn />
+                </Modal.Body>
+                <Modal.Footer>
+                  <div className="form-group col-md-4">
+                    <Button variant="primary" onClick={this.handleViewClose}>
+                      Check In
+                    </Button>
+                  </div>
+                </Modal.Footer>
+              </Modal>
+            </td>
+            <td>{data.date}</td>
+
+            <td>{data.name}</td>
+          </div>
+        </tr>
+      );
+    });
+
     return (
       <div className="container-fluid">
         <div className="row">
@@ -82,41 +131,7 @@ class Checkedoutitems extends Component {
                       <td />
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr id="ent">
-                      <td>
-                        <Button onClick={this.handleViewOpen}>
-                          bob.lee@cinco.ca
-                        </Button>
-                        <Modal
-                          size="lg"
-                          className="modal fade bd-example-modal-lg"
-                          show={this.state.viewFlag}
-                          onHide={this.handleViewClose}
-                        >
-                          <Modal.Header closeButton />
-                          <Modal.Body>
-                            <CheckIn />
-                          </Modal.Body>
-                          <Modal.Footer>
-                            <div className="form-group col-md-4">
-                              <Button
-                                variant="primary"
-                                onClick={this.handleViewClose}
-                              >
-                                Check In
-                              </Button>
-                            </div>
-                          </Modal.Footer>
-                        </Modal>
-                      </td>
-                      <td>Wed, Dec 23, 2018 @ 5:00pm</td>
-
-                      <td>Wed, Jan 3, 2018 @ 5:00pm</td>
-                      <td>5</td>
-                      <td>---</td>
-                    </tr>
-                  </tbody>
+                  <tbody>{tabel_row}</tbody>
                 </table>
               </div>
             </div>

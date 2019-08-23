@@ -8,8 +8,8 @@ import Addrole from "../Role/Addrole";
 class SideBar extends Component {
   render() {
     return (
-      <div>
-        <div id="con-col-2">
+      <div className="sider">
+        <div className="side-bar" id="con-col-2">
           <h2>Inventory</h2>
           <div className="p-2 bg-black">
             <Link to="/Usermangment/Viewitems" className="nav-link">
@@ -18,7 +18,7 @@ class SideBar extends Component {
             <Link className="nav-link" to="/">
               Reserved Inventory
             </Link>
-            <Link className="nav-link" to="/">
+            <Link className="nav-link" to="#">
               Reserved Items
             </Link>
             <Link to="/Usermangment/Checkedoutitems" className="nav-link">
@@ -38,7 +38,6 @@ class SideBar extends Component {
             </Link>
           </div>
         </div>
-        <div className="col" />
       </div>
     );
   }

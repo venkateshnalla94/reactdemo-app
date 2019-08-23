@@ -14,6 +14,7 @@ import Checkedoutitems from "./Component/CheckedOutItems/Checkedoutitems";
 import CheckIn from "./Component/CheckedOutItems/CheckIn";
 import SubComp from "./Component/UserManagment/SubComp";
 import SideBar from "./Component/UserManagment/SideBar";
+import First_Page from "./Component/Landing_Page/Pages/First_Page";
 
 class App extends Component {
   render() {
@@ -32,6 +33,7 @@ class App extends Component {
           <Route path="/CheckIn" component={CheckIn} exact />
           <Route path="/SubComp" component={SubComp} exact />
           <Route path="/SideBar" component={SideBar} exact />
+          <Route path="/Landing_page" component={First_Page} exact />
         </div>
       </BrowserRouter>
     );

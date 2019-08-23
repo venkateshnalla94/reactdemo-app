@@ -1,0 +1,44 @@
+#cloud_download {
+  color: gainsboro;
+  width: 48px;
+  height: auto;
+  outline: thin;
+}
+#box_beginning {
+  margin-top: 5%;
+}
+
+#icon_col_2 {
+  margin-top: 5%;
+}
+.small_info {
+  color: #666666;
+  position: relative;
+}
+#description {
+  font-weight: 100;
+  padding-bottom: 15px;
+  color: #747171;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.19);
+  margin-bottom: 0px;
+  padding-top: 12px;
+  padding-left: 6%;
+  background-color: white;
+}
+#thumbnails {
+  width: 55px;
+  height: auto;
+}
+#innerBox {
+  margin-left: 5%;
+}
+#secondJob {
+  background: white;
+  height: 400px;
+  -webkit-border-radius: 30px;
+}
+#item_tagline_page2 {
+  font-size: 20px;
+  font-weight: 600 !important;
+  color: grey;
+}

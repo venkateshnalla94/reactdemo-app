@@ -5,7 +5,7 @@ img {
   height: auto;
 }
 #grad1 {
-  height: 800px;
+  height: 700px;
   /* background-color: #51c9f5; */
   /* background: linear-gradient(-45deg, #0c9ed4 0%, #51c9f5 100%);*/
 
@@ -65,3 +65,6 @@ img {
 #toolBar {
   padding-left: 50px;
 }
+/* #secondComponent {
+  width: 90%;
+} */

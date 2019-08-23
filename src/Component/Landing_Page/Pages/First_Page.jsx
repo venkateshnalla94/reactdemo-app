@@ -12,10 +12,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Button from "react-bootstrap/Button";
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
+import SecondJob from "../Pages/SecondJob";
 const First_Page = () => {
   return (
     <div>
-      <div className="container-fluid">
+      <div>
         <div id="grad1">
           <div className="container">
             <Navbar expand="lg" variant="light" bg="light">
@@ -77,6 +78,9 @@ const First_Page = () => {
                 </ButtonToolbar>
               </div>
             </div>
+          </div>
+          <div className="col" id="secondComponent">
+            <SecondJob />
           </div>
         </div>
       </div>

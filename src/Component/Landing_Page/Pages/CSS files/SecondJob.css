@@ -42,3 +42,31 @@
   font-weight: 600 !important;
   color: grey;
 }
+#productDesc {
+  font-size: 40px;
+  font-weight: 150 !important;
+  color: grey;
+}
+
+#contentDesc {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  color: grey;
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+#contentDesc_2 {
+  margin-left: 10%;
+  margin-right: 10%;
+
+  color: grey;
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+#catgerios {
+  margin-left: 10%;
+  margin-top: 5%;
+}
+#icons {
+}

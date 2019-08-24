@@ -8,9 +8,16 @@ import {
   faGift,
   faBriefcase,
   faSync,
-  faSyncAlt
+  faSyncAlt,
+  faIcons,
+  faWindowRestore,
+  faStickyNote,
+  faCogs
 } from "@fortawesome/free-solid-svg-icons";
+
 import "../Pages/CSS files/SecondJob.css";
+import Button from "react-bootstrap/Button";
+import { bold } from "ansi-colors";
 const SecondJob = () => {
   return (
     <div id="secondJob">
@@ -105,15 +112,58 @@ const SecondJob = () => {
       <div className="container">
         <div className="row " id="box_beginning">
           <div className="col-sm-12 d-flex justify-content-center">
-            <div className="row">
-              <div className="col">
-                <h6 id="item_tagline_page2">
-                  PREMIUM BOOTSTRAP 4 AND REACTSTRAP UI KIT
-                </h6>
+            <h6 id="item_tagline_page2">
+              PREMIUM BOOTSTRAP 4 AND REACTSTRAP UI KIT
+            </h6>
+          </div>
+          <div className="col-sm-12 d-flex justify-content-center">
+            <h1 id="productDesc">Product description</h1>
+          </div>
+          <div className="col-sm-12 d-flex ">
+            <p className="d-flex justify-content-center" id="contentDesc">
+              Now UI Kit PRO Reactis a premium Bootstrap 4 kit provided by
+              Invision and Creative Tim. It is built over React, React Hooks and
+              Reactstrap using Create React App. It is a beautiful
+              cross-platform UI kit featuring over 1000 components, 34 sections
+              and 11 example pages.
+            </p>
+
+            <hr />
+          </div>
+          <div className="col-sm-12 d-flex ">
+            <p id="contentDesc_2">
+              Now UI Kit is one of the most popular UI Kits online, provided in
+              PSD and Sketch formats by Invision. We wanted to find a way for
+              developers worldwide to benefit from using it. We created the
+              fully coded version of Now UI Kit React
+            </p>
+          </div>
+          <div className="col-sm-12 d-flex justify-content-center">
+            <Button variant="light">View More</Button>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12" id="catgerios">
+            <div className="container">
+              <div className="row" id="icons">
+                <div className="col">
+                  <i class="fa-microsoft" />
+                </div>
+                <div className="col">
+                  <FontAwesomeIcon
+                    icon={faCogs}
+                    style={{ cursor: "pointer" }}
+                  />
+                </div>
+                <div className="col">dbjsadb</div>
               </div>
-              {/* <div className="col">
-                <h6 id="item_tagline_page2">Product description</h6>
-              </div> */}
+              <div className="row">
+                <div className="col">dbjsadb</div>
+                <div className="col">dbjsadb</div>
+                <div className="col">dbjsadb</div>
+              </div>
             </div>
           </div>
         </div>

@@ -12,7 +12,13 @@ import {
   faIcons,
   faWindowRestore,
   faStickyNote,
-  faCogs
+  faCogs,
+  faImage,
+  faBacon,
+  faTextHeight,
+  faFileAlt,
+  faMobileAlt,
+  faEnvelopeOpen
 } from "@fortawesome/free-solid-svg-icons";
 
 import "../Pages/CSS files/SecondJob.css";
@@ -145,24 +151,53 @@ const SecondJob = () => {
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-sm-12" id="catgerios">
-            <div className="container">
-              <div className="row" id="icons">
-                <div className="col">
-                  <i class="fa-microsoft" />
-                </div>
-                <div className="col">
+          <div className="col-sm-10" id="catgerios">
+            <div className="container ">
+              <div className="row">
+                <div className="col d-flex justify-content-center">
                   <FontAwesomeIcon
+                    id="icons"
+                    icon={faEnvelopeOpen}
+                    style={{ cursor: "pointer" }}
+                  />
+                </div>
+                <div className="col d-flex justify-content-center">
+                  <FontAwesomeIcon
+                    id="icons"
                     icon={faCogs}
                     style={{ cursor: "pointer" }}
                   />
                 </div>
-                <div className="col">dbjsadb</div>
+                <div className="col d-flex justify-content-center">
+                  <FontAwesomeIcon
+                    id="icons"
+                    icon={faImage}
+                    style={{ cursor: "pointer" }}
+                  />
+                </div>
               </div>
-              <div className="row">
-                <div className="col">dbjsadb</div>
-                <div className="col">dbjsadb</div>
-                <div className="col">dbjsadb</div>
+              <div className="row" id="second_row_icons">
+                <div className="col d-flex justify-content-center">
+                  <FontAwesomeIcon
+                    id="icons"
+                    icon={faBacon}
+                    style={{ cursor: "pointer" }}
+                  />
+                </div>
+                <div className="col d-flex justify-content-center">
+                  <FontAwesomeIcon
+                    id="icons"
+                    icon={faFileAlt}
+                    style={{ cursor: "pointer" }}
+                  />
+                </div>
+                <div className="col d-flex justify-content-center">
+                  <FontAwesomeIcon
+                    id="icons"
+                    icon={faMobileAlt}
+                    style={{ cursor: "pointer" }}
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -34,7 +34,14 @@
 }
 #secondJob {
   background: white;
-  height: 400px;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0) 30%,
+    rgb(212, 212, 212) 80%
+  );
+
+  height: 1200px;
   -webkit-border-radius: 30px;
 }
 #item_tagline_page2 {
@@ -69,4 +76,16 @@
   margin-top: 5%;
 }
 #icons {
+  font-size: 55px;
+  display: block;
+  margin-bottom: 15px;
+  /* width: 60px; */
+  height: auto;
+  color: rgb(201, 193, 193);
+  -webkit-filter: invert(100%);
+  /* filter: invert(100%); */
+  background-color: none;
+}
+#second_row_icons {
+  margin-top: 10%;
 }

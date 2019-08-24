@@ -5,11 +5,15 @@ img {
   height: auto;
 }
 #grad1 {
-  height: 700px;
+  height: 1750px;
   /* background-color: #51c9f5; */
   /* background: linear-gradient(-45deg, #0c9ed4 0%, #51c9f5 100%);*/
 
-  background-image: linear-gradient(to top, #0c9ed4 10%, #51c9f5 100%);
+  background-image: linear-gradient(
+    to bottom,
+    #0c9ed4 50%,
+    rgb(212, 212, 212) 50%
+  );
   /* Standard syntax (must be last)  */
 }
 #item {

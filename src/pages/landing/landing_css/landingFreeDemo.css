@@ -1,0 +1,54 @@
+.free_demo {
+  background: white;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0) 30%,
+    rgb(212, 212, 212) 80%
+  );
+  padding-bottom: 150px;
+  border-color: white;
+}
+
+#item_Demo {
+  margin-top: 5%;
+  margin-left: 10%;
+  font-size: 40px;
+  font-weight: 100 !important;
+}
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+#demo_desc {
+  margin-top: 5%;
+  margin-left: 8% !important;
+}
+.demo_paragraph {
+  color: #333333;
+  font-weight: 120;
+  font-size: 18px;
+}
+.demo_image {
+  width: 80%;
+  height: auto;
+  margin-top: 0%;
+  margin-left: 10%;
+}
+.elements {
+  font-weight: 200 !important;
+  font-size: 0.8rem;
+}
+#products {
+  margin-top: 10%;
+}
+
+#ternary_button {
+  background-color: #aaaaaa;
+  border-color: #aaaaaa;
+  color: #ffffff;
+}
+.container_button {
+  margin-top: 10%;
+  margin-left: 5%;
+  width: 27%;
+}

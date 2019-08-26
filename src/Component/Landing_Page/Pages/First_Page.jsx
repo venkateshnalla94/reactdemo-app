@@ -13,6 +13,7 @@ import {
 import Button from "react-bootstrap/Button";
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import SecondJob from "../Pages/SecondJob";
+import LandingFreeDemo from "../../../pages/landing/LandingFreeDemo";
 const First_Page = () => {
   return (
     <div>
@@ -82,6 +83,8 @@ const First_Page = () => {
           <div className="col" id="secondComponent">
             <SecondJob />
           </div>
+
+          <LandingFreeDemo />
         </div>
       </div>
     </div>

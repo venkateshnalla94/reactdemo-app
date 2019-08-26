@@ -16,6 +16,7 @@ import SubComp from "./Component/UserManagment/SubComp";
 import SideBar from "./Component/UserManagment/SideBar";
 import First_Page from "./Component/Landing_Page/Pages/First_Page";
 import SecondJob from "./Component/Landing_Page/Pages/SecondJob";
+import LandingFreeDemo from "./pages/landing/LandingFreeDemo";
 
 class App extends Component {
   render() {
@@ -36,6 +37,7 @@ class App extends Component {
           <Route path="/SideBar" component={SideBar} exact />
           <Route path="/Landing_page" component={First_Page} exact />
           <Route path="/SecondJob" component={SecondJob} exact />
+          <Route path="/LandingFreeDemo" component={LandingFreeDemo} exact />
         </div>
       </BrowserRouter>
     );

@@ -14,6 +14,9 @@ import Button from "react-bootstrap/Button";
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import SecondJob from "../Pages/SecondJob";
 import LandingFreeDemo from "../../../pages/landing/LandingFreeDemo";
+
+import LandingComment from "../../../pages/landing/LandingComment";
+
 const First_Page = () => {
   return (
     <div>
@@ -85,6 +88,7 @@ const First_Page = () => {
           </div>
 
           <LandingFreeDemo />
+          <LandingComment />
         </div>
       </div>
     </div>

@@ -1,0 +1,68 @@
+.landingComment {
+  background: #3e3d3df2;
+  padding-bottom: 200px;
+}
+
+#feedback_container {
+  margin-left: 22%;
+  background: #ffffff;
+  border-radius: 1%;
+  margin-top: -6%;
+  box-shadow: 0px 3px #535252;
+}
+#item_Demo {
+  margin-bottom: 10% !important;
+  margin-left: 0% !important;
+}
+#author_img {
+  width: 70px;
+  height: auto;
+  margin-top: 0% !important;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: rgba(255, 149, 0, 0.55);
+}
+.comment_heading {
+  margin-top: 5%;
+
+  font-size: 1.5rem;
+  font-weight: 100 !important;
+}
+#group_button {
+  margin-top: 3%;
+}
+#buttonGroup {
+  background-color: #ffffff;
+  border-color: #989696;
+  color: #b5b5b5;
+  -webkit-border-radius: 500px;
+}
+#user_comments {
+  margin-top: 5%;
+}
+.user_img {
+  width: 68px;
+  height: auto;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: rgba(156, 156, 156, 0.55);
+}
+#authoer {
+  font-weight: 100;
+  color: #777777;
+}
+.lastCommented {
+  font-weight: 100;
+  color: #777777;
+  font-size: 60%;
+}
+.user_profile {
+  margin-top: 2%;
+}
+.user_comment {
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+.loginButton {
+  margin-left: 70%;
+}

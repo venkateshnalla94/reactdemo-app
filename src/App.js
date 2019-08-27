@@ -18,6 +18,7 @@ import First_Page from "./Component/Landing_Page/Pages/First_Page";
 import SecondJob from "./Component/Landing_Page/Pages/SecondJob";
 import LandingFreeDemo from "./pages/landing/LandingFreeDemo";
 import landingComment from "./pages/landing/LandingComment";
+import Footer from "./components/Footer";
 
 class App extends Component {
   render() {
@@ -40,6 +41,8 @@ class App extends Component {
           <Route path="/SecondJob" component={SecondJob} exact />
           <Route path="/LandingFreeDemo" component={LandingFreeDemo} exact />
           <Route path="/LandingComment" component={landingComment} exact />
+
+          <Route path="/Footer" component={Footer} exact />
         </div>
       </BrowserRouter>
     );

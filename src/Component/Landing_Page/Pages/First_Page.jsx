@@ -16,6 +16,7 @@ import SecondJob from "../Pages/SecondJob";
 import LandingFreeDemo from "../../../pages/landing/LandingFreeDemo";
 
 import LandingComment from "../../../pages/landing/LandingComment";
+import Footer from "../../../components/Footer";
 
 const First_Page = () => {
   return (
@@ -89,6 +90,7 @@ const First_Page = () => {
 
           <LandingFreeDemo />
           <LandingComment />
+          <Footer />
         </div>
       </div>
     </div>

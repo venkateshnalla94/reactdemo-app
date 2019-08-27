@@ -1,6 +1,12 @@
 .landingComment {
-  background: #3e3d3df2;
+  /* background: #3e3d3df2; */
   padding-bottom: 200px;
+
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 0, 0, 0) 10%,
+    #3e3d3df2 10%
+  );
 }
 
 #feedback_container {

@@ -10,6 +10,8 @@ import {
   faBlog,
   faQuestionCircle
 } from "@fortawesome/free-solid-svg-icons";
+import { Route, Link, Switch } from "react-router-dom";
+
 import Button from "react-bootstrap/Button";
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import SecondJob from "../Pages/SecondJob";
@@ -40,10 +42,13 @@ const First_Page = () => {
                   />
                 </Navbar.Brand>
                 <Navbar.Brand href="#">
-                  <FontAwesomeIcon
-                    icon={faGift}
-                    style={{ cursor: "pointer" }}
-                  />
+                  <Link to="NavigationDashboard">
+                    <FontAwesomeIcon
+                      icon={faGift}
+                      style={{ cursor: "pointer" }}
+                      to="/NavigationDashboard"
+                    />
+                  </Link>
                 </Navbar.Brand>
                 <Navbar.Brand href="#">
                   <FontAwesomeIcon

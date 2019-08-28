@@ -4,6 +4,7 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 #nav_bar {
+  display: flex;
   width: 210px;
   margin-right: 0% !important;
 }
@@ -11,10 +12,15 @@
   width: 210px;
   margin-right: 0% !important;
   margin-top: 40%;
+  display: flex;
 }
 #vertical_navBar {
   font-size: 1rem;
   font-weight: 100;
+}
+#side_bar_headings {
+  font-weight: 100;
+  font-size: 0.9rem;
 }
 
 #layer {
@@ -23,11 +29,12 @@
   display: block;
   position: relative;
   padding-bottom: 25px;
+  margin-right: 10%;
 }
 #layer::after {
   content: "";
   background: url("https://demos.creative-tim.com/material-dashboard/assets/img/sidebar-1.jpg");
-  opacity: 0.15;
+  opacity: 0.1;
   top: 0;
   left: 0;
   bottom: 0;
@@ -35,3 +42,5 @@
   position: absolute;
   z-index: -1;
 }
+
+/*  */

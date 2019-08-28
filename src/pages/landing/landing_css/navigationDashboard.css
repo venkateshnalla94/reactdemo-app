@@ -1,0 +1,37 @@
+#sideBar_heading {
+  margin-top: 15%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#nav_bar {
+  width: 210px;
+  margin-right: 0% !important;
+}
+#pro_verson {
+  width: 210px;
+  margin-right: 0% !important;
+  margin-top: 40%;
+}
+#vertical_navBar {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+#layer {
+  width: 350px;
+  height: auto;
+  display: block;
+  position: relative;
+  padding-bottom: 25px;
+}
+#layer::after {
+  content: "";
+  background: url("https://demos.creative-tim.com/material-dashboard/assets/img/sidebar-1.jpg");
+  opacity: 0.15;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}

@@ -11,11 +11,11 @@ const Footer = () => {
             <div className="container" id="section_num">
               <h4 id="figures">
                 <b>855,872</b>
-                <p>accounts</p>
+                <p>Accounts</p>
               </h4>
               <h4 id="figures">
                 <b>1,544,467</b>
-                <p>accounts</p>
+                <p>Downloads</p>
               </h4>
               <h4 id="figures">
                 <b>118</b>
@@ -47,7 +47,9 @@ const Footer = () => {
               <div className="col-sm-2">
                 <h6>Company</h6>
                 <ul id="listItems">
-                  <li id="nav">About us</li>
+                  <li id="nav">
+                    <a>dsadsa</a>
+                  </li>
                   <li id="nav">Frrebies</li>
                   <li id="nav">Premium</li>
                   <li id="nav">Blog</li>
@@ -91,6 +93,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <hr />
       </div>
     </div>
   );

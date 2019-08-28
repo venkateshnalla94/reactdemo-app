@@ -11,10 +11,15 @@ img {
 
   background-image: linear-gradient(
     to bottom,
-    #0c9ed4 50%,
-    rgb(212, 212, 212) 50%
+    #0c9ed4 35%,
+    rgb(212, 212, 212) 10%
   );
   /* Standard syntax (must be last)  */
+  /* background-image: linear-gradient(
+    to top,
+    rgba(255, 0, 0, 0) 10%,
+    #3e3d3df2 10%
+  ); */
 }
 #item {
   margin-top: 30%;

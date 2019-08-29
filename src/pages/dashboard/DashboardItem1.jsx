@@ -7,6 +7,7 @@ import {
   faBell,
   faUser
 } from "@fortawesome/free-solid-svg-icons";
+import Space from "./Space";
 const DashboardItem1 = () => {
   return (
     <div className="container-fluid">
@@ -45,6 +46,32 @@ const DashboardItem1 = () => {
             icon={faUser}
             style={{ cursor: "pointer" }}
           />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-sm-4" style={{ marginTop: "5%" }}>
+          <Space
+            color="#ffa500a6"
+            name="Used Space"
+            img="http://lorempixel.com/output/sports-q-c-640-480-7.jpg"
+            note="49/50 GB"
+          ></Space>
+        </div>
+        <div className="col-sm-4" style={{ marginTop: "5%" }}>
+          <Space
+            color="#7b447bcc"
+            name="Storage"
+            img="http://lorempixel.com/output/nightlife-q-c-640-480-4.jpg"
+            note="$34500"
+          ></Space>
+        </div>
+        <div className="col-sm-4" style={{ marginTop: "5%" }}>
+          <Space
+            color="#7c7cc1d6"
+            name="Notification Alert"
+            img="http://lorempixel.com/output/city-q-c-640-480-9.jpg"
+            note="Issues 74"
+          ></Space>
         </div>
       </div>
     </div>

@@ -42,7 +42,7 @@ const First_Page = () => {
                   />
                 </Navbar.Brand>
                 <Navbar.Brand href="#">
-                  <Link to="NavigationDashboard">
+                  <Link to="Dashboard">
                     <FontAwesomeIcon
                       icon={faGift}
                       style={{ cursor: "pointer" }}

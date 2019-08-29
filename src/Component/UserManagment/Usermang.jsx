@@ -9,6 +9,7 @@ import Viewitems from "../Viewitems/Viewitems";
 import Checkedoutitems from "../CheckedOutItems/Checkedoutitems";
 import axios from "axios";
 import Landing_page from "../Landing_Page/Pages/First_Page";
+import DashboardItem1 from "../../pages/dashboard/DashboardItem1";
 class Usermang extends Component {
   constructor() {
     super();
@@ -25,7 +26,7 @@ class Usermang extends Component {
             <div className="col-md-2">
               <SideBar />
             </div>
-            <div className="col-md-10">
+            <div>
               <Switch>
                 <Route path="/Usermangment/Addrole" component={Addrole} exact />
                 <Route path="/Usermangment/User" component={User} exact />
@@ -39,8 +40,11 @@ class Usermang extends Component {
                   component={Checkedoutitems}
                   exact
                 />
-
-                <Route path="/Usermangment/SubComp" component={SubComp} exact />
+                <Route
+                  path="/Usermangment/SubComp"
+                  component={DashboardItem1}
+                  exact
+                />
               </Switch>
             </div>
           </div>

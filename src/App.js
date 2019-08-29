@@ -20,6 +20,8 @@ import LandingFreeDemo from "./pages/landing/LandingFreeDemo";
 import landingComment from "./pages/landing/LandingComment";
 import Footer from "./components/Footer";
 import NavigationDashboard from "./components/NavigationDashboard";
+import Dashboard from "./pages/Dashboard";
+import DashboardItem1 from "./pages/dashboard/DashboardItem1";
 
 class App extends Component {
   render() {
@@ -28,7 +30,6 @@ class App extends Component {
         <div>
           <Route path="/" component={Usermang} exact />
           <Route path="/Usermangment" component={Usermang} />
-
           <Route path="/Userform" component={Userform} exact />
           <Route path="/Editrole" component={Editrole} exact />
           <Route path="/Createitem" component={Createitem} exact />
@@ -36,18 +37,20 @@ class App extends Component {
           <Route path="/CheckOut" component={CheckOut} exact />
           <Route path="/Checkedoutitems" component={Checkedoutitems} exact />
           <Route path="/CheckIn" component={CheckIn} exact />
-          <Route path="/SubComp" component={SubComp} exact />
-          <Route path="/SideBar" component={SideBar} exact />
-          <Route path="/Landing_page" component={First_Page} exact />
-          <Route path="/SecondJob" component={SecondJob} exact />
-          <Route path="/LandingFreeDemo" component={LandingFreeDemo} exact />
-          <Route path="/LandingComment" component={landingComment} exact />
-          <Route path="/Footer" component={Footer} exact />
+          <Route path="/subComp" component={SubComp} exact />
+          <Route path="/sideBar" component={SideBar} exact />
+          <Route path="/landing_page" component={First_Page} exact />
+          <Route path="/secondJob" component={SecondJob} exact />
+          <Route path="/landingFreeDemo" component={LandingFreeDemo} exact />
+          <Route path="/fandingComment" component={landingComment} exact />
+          <Route path="/footer" component={Footer} exact />
           <Route
             path="/NavigationDashboard"
             component={NavigationDashboard}
             exact
           />
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/dashboardItem1" component={DashboardItem1} exact />
         </div>
       </BrowserRouter>
     );

@@ -4,10 +4,11 @@ import Button from "react-bootstrap/Button";
 // import Navbar.Brand from "react-bootstrap/NavbarBrand";
 import "../pages/landing/landing_css/navigationDashboard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Route, Link, Switch } from "react-router-dom";
+
 import {
   faCalendar,
   faUser,
-  faTable,
   faClipboardCheck,
   faDrumstickBite,
   faMapMarkerAlt,
@@ -16,10 +17,12 @@ import {
   faSnowboarding,
   faChevronCircleUp
 } from "@fortawesome/free-solid-svg-icons";
+import dashboardItem from "../pages/dashboard/DashboardItem1";
+import DashboardItem1 from "../pages/dashboard/DashboardItem1";
 const NavigationDashboard = () => {
   return (
     <div>
-      <div className="col-sm-2" id="layer">
+      <div className="col" id="layer">
         <div className="container-fluid" id="white_smoke">
           <h4 className="d-flex justify-content-center">
             <span id="sideBar_heading">Creative Tim</span>
@@ -27,14 +30,14 @@ const NavigationDashboard = () => {
           <hr />
 
           <Navbar id="nav_bar">
-            <Navbar.Brand href="#home" id="nav_bar" block>
+            <Link to="/Dashboard/DashboardItem1" id="nav_bar">
               <FontAwesomeIcon
                 icon={faCalendar}
                 style={{ cursor: "pointer" }}
               />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">Dashboard</h6>
-            </Navbar.Brand>
+            </Link>
           </Navbar>
           <Navbar id="nav_bar">
             <Navbar.Brand href="#home" id="nav_bar">

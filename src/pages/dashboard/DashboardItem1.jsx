@@ -1,0 +1,53 @@
+import React from "react";
+import "../dashboard/Dashboard_css/item1.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSearch,
+  faSatelliteDish,
+  faBell,
+  faUser
+} from "@fortawesome/free-solid-svg-icons";
+const DashboardItem1 = () => {
+  return (
+    <div className="container-fluid">
+      <div className="row" id="top_heading">
+        <h4 style={{ fontSize: "1.5rem", fontWeight: "100" }}>Dashboard</h4>
+        <input className="searchField" type="text" placeholder="Search" />
+        <div className="col-sm-1">
+          <FontAwesomeIcon
+            id="fontAwesomSearch"
+            icon={faSearch}
+            style={{
+              cursor: "pointer"
+              // width: "36%",
+              // marginBottom: "20%"
+            }}
+            // Inline Styling
+          />
+        </div>
+        <div className="col-sm-1">
+          <FontAwesomeIcon
+            id="fontAwesomSearch"
+            icon={faSatelliteDish}
+            style={{ cursor: "pointer" }}
+          />
+        </div>
+        <div className="col-sm-1">
+          <FontAwesomeIcon
+            id="fontAwesomSearch"
+            icon={faBell}
+            style={{ cursor: "pointer" }}
+          />
+        </div>
+        <div className="col-sm-1">
+          <FontAwesomeIcon
+            id="fontAwesomSearch"
+            icon={faUser}
+            style={{ cursor: "pointer" }}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+export default DashboardItem1;

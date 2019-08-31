@@ -11,7 +11,14 @@ const Dashboard = () => {
           <NavigationDashboard />
         </div>
 
-        <div className="col-sm-9" style={{ background: "#e0dddd3d" }}>
+        <div
+          className="col-sm-9"
+          style={{
+            background: "#e0dddd3d",
+            height: "780px",
+            overflow: "scroll"
+          }}
+        >
           <Switch>
             <Route
               path="/Dashboard/DashboardItem1"

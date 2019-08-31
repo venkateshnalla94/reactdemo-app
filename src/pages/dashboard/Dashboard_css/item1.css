@@ -15,7 +15,7 @@
   background: none;
 }
 #fontAwesomSearch {
-  width: 65%;
+  /* width: 65%; */
   height: auto;
   margin-bottom: 40%;
   padding: 0.6rem;
@@ -27,4 +27,11 @@
 
   border-radius: 50%;
   border-color: #c3c3c3;
+}
+.activeLinks {
+  color: white !important;
+}
+.activeLinks:hover {
+  color: black !important;
+  /* border: 10px, 10px; */
 }

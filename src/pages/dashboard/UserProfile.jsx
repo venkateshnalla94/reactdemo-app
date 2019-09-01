@@ -13,7 +13,7 @@ const UserProfile = () => {
 
       <div className="row" style={{ marginTop: "6%" }}>
         <div
-          className="col-sm-8"
+          className="col-sm-7"
           style={{
             height: "auto",
             width: "auto",
@@ -50,7 +50,7 @@ const UserProfile = () => {
             <div className="container" style={{ marginTop: "2%" }}>
               <Form style={{ color: "grey" }}>
                 <Form.Row>
-                  <Form.Label column md={6} controlId="formGridEmail">
+                  <Form.Label column md={6}>
                     <input
                       className="labelfield"
                       type="text"
@@ -58,14 +58,14 @@ const UserProfile = () => {
                     />
                   </Form.Label>
 
-                  <Form.Label column sm={3} controlId="formGridPassword">
+                  <Form.Label column sm={3}>
                     <input
                       className="labelfield"
                       type="text"
                       placeholder="Username"
                     />
                   </Form.Label>
-                  <Form.Label column sm={3} controlId="formGridPassword">
+                  <Form.Label column sm={3}>
                     <input
                       className="labelfield"
                       type="Email"
@@ -74,12 +74,7 @@ const UserProfile = () => {
                   </Form.Label>
                 </Form.Row>
                 <Form.Row style={{ marginTop: "5%" }}>
-                  <Form.Label
-                    style={{ marginRight: "5%" }}
-                    column
-                    sm={6}
-                    controlId="formGridEmail"
-                  >
+                  <Form.Label style={{ marginRight: "5%" }} column sm={6}>
                     <input
                       className="labelfield"
                       type="text"
@@ -87,7 +82,7 @@ const UserProfile = () => {
                     />
                   </Form.Label>
 
-                  <Form.Label column sm={5} controlId="formGridPassword">
+                  <Form.Label column sm={5}>
                     <input
                       style={{ width: "95%" }}
                       className="labelfield"
@@ -97,12 +92,7 @@ const UserProfile = () => {
                   </Form.Label>
                 </Form.Row>
                 <Form.Row style={{ marginTop: "5%" }}>
-                  <Form.Label
-                    style={{ marginRight: "5%" }}
-                    column
-                    sm={12}
-                    controlId="formGridEmail"
-                  >
+                  <Form.Label style={{ marginRight: "5%" }} column sm={12}>
                     <input
                       className="labelfield"
                       type="text"
@@ -111,7 +101,7 @@ const UserProfile = () => {
                   </Form.Label>
                 </Form.Row>
                 <Form.Row style={{ marginTop: "5%" }}>
-                  <Form.Label column md={4} controlId="formGridEmail">
+                  <Form.Label column md={4}>
                     <input
                       className="labelfield"
                       type="text"
@@ -119,14 +109,14 @@ const UserProfile = () => {
                     />
                   </Form.Label>
 
-                  <Form.Label column sm={4} controlId="formGridPassword">
+                  <Form.Label column sm={4}>
                     <input
                       className="labelfield"
                       type="text"
                       placeholder="Country"
                     />
                   </Form.Label>
-                  <Form.Label column sm={4} controlId="formGridPassword">
+                  <Form.Label column sm={4}>
                     <input
                       className="labelfield"
                       type="Email"
@@ -157,6 +147,70 @@ const UserProfile = () => {
                   Update Profile
                 </Button>
               </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-sm-4"
+          style={{
+            marginLeft: "5%",
+            height: "440px",
+            width: "auto",
+            paddingBottom: "5%",
+            boxShadow:
+              "rgba(0, 0, 0, 0.14) 0px 4px 20px 0px, rgba(132, 125, 134, 0.4) 0px 7px 10px -5px"
+          }}
+        >
+          <div
+            className="container"
+            style={{
+              width: "95%",
+              borderRadius: "2px",
+              opacity: ".9"
+            }}
+          >
+            <img
+              style={{
+                marginTop: "-25%",
+                borderRadius: "50%",
+                width: "150px",
+                height: "auto",
+                marginLeft: "22%"
+              }}
+              src="https://demos.creative-tim.com/material-dashboard/assets/img/faces/marc.jpg"
+            ></img>
+            <div className="row d-flex justify-content-center">
+              <h6 style={{ marginTop: "10%", color: "#989191d6" }}>
+                CEO / CO-FOUNDER
+              </h6>
+              <h4
+                style={{ marginTop: "5%", color: "black", fontWeight: "100" }}
+              >
+                Alec Thompson
+              </h4>
+              <p
+                style={{
+                  marginTop: "5%",
+                  color: "#989191d6",
+                  fontWeight: "100",
+                  fontSize: "0.8rem"
+                }}
+              >
+                Don't be scared of the truth because we need to restart the
+                human foundation in truth And I love you like Kanye loves Kanye
+                I love Rick Owens’ bed design but the back is...
+              </p>
+              <Button
+                style={{
+                  width: "100px",
+                  backgroundColor: "#9c27b0",
+                  marginTop: "5%",
+                  borderColor: "#9c27b0",
+                  WebkitBorderRadius: "500px"
+                }}
+              >
+                Follow
+              </Button>
             </div>
           </div>
         </div>

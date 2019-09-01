@@ -14,6 +14,14 @@
   border-right: none;
   background: none;
 }
+
+.searchField:focus {
+  outline: none;
+}
+#table_head_weight {
+  font-weight: 100 !important;
+  border-top: 0px;
+}
 #fontAwesomSearch {
   /* width: 65%; */
   height: auto;

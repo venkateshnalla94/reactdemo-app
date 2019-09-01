@@ -40,11 +40,11 @@ const NavigationDashboard = () => {
             </Link>
           </Navbar>
           <Navbar id="nav_bar">
-            <Navbar.Brand href="#home" id="nav_bar">
+            <Link to="/Dashboard/DashboardItem1" id="nav_bar">
               <FontAwesomeIcon icon={faUser} style={{ cursor: "pointer" }} />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">User Profile</h6>
-            </Navbar.Brand>
+            </Link>
           </Navbar>
           <Navbar id="nav_bar">
             <Navbar.Brand href="#home" id="nav_bar">

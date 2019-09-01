@@ -16,7 +16,8 @@ const Dashboard = () => {
           style={{
             background: "#e0dddd3d",
             height: "780px",
-            overflow: "scroll"
+            overflow: "scroll",
+            paddingBottom: "5%"
           }}
         >
           <Switch>

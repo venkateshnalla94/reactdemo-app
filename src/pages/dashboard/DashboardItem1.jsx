@@ -9,46 +9,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Space from "./Space";
 import Charts from "./Charts";
+import Tables from "./Tables";
+import Header_Nav from "./Header_Nav";
+
 const DashboardItem1 = () => {
   return (
-    <div className="container-fluid">
-      <div className="row" id="top_heading">
-        <h4 style={{ fontSize: "1.5rem", fontWeight: "100" }}>Dashboard</h4>
-        <input className="searchField" type="text" placeholder="Search" />
-        <div className="col-sm-1">
-          <FontAwesomeIcon
-            id="fontAwesomSearch"
-            icon={faSearch}
-            style={{
-              cursor: "pointer"
-              // width: "36%",
-              // marginBottom: "20%"
-            }}
-            // Inline Styling
-          />
-        </div>
-        <div className="col-sm-1">
-          <FontAwesomeIcon
-            id="fontAwesomSearch"
-            icon={faSatelliteDish}
-            style={{ cursor: "pointer" }}
-          />
-        </div>
-        <div className="col-sm-1">
-          <FontAwesomeIcon
-            id="fontAwesomSearch"
-            icon={faBell}
-            style={{ cursor: "pointer" }}
-          />
-        </div>
-        <div className="col-sm-1">
-          <FontAwesomeIcon
-            id="fontAwesomSearch"
-            icon={faUser}
-            style={{ cursor: "pointer" }}
-          />
-        </div>
-      </div>
+    <div>
+      <Header_Nav name="Dashboard"></Header_Nav>
       <div className="row">
         <div className="col-sm-4" style={{ marginTop: "5%" }}>
           <Space
@@ -83,6 +50,30 @@ const DashboardItem1 = () => {
           }}
         >
           <Charts></Charts>
+        </div>
+
+        <div
+          className="col-sm-5"
+          style={{
+            marginTop: "20%",
+            background: "whitesmoke",
+            boxShadow: "-4px 7px 20px 6px",
+            marginLeft: "10%"
+          }}
+        >
+          <Tables></Tables>
+        </div>
+      </div>
+      <hr style={{ marginTop: "10%" }}></hr>
+      <div className="row" style={{ fontWeight: "100" }}>
+        <div className="col-sm-2">Creative Tim</div>
+        <div className="col-sm-2">About US</div>
+        <div className="col-sm-2">Blog </div>
+        <div
+          className="col-sm-6 d-flex justify-content-end"
+          style={{ textAlign: "right" }}
+        >
+          <p>2019, made with favorite by Creative Tim for a better web.</p>
         </div>
       </div>
     </div>

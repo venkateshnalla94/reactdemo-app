@@ -52,8 +52,10 @@ const Charts = () => {
         <div
           className="container "
           style={{
-            background: " rgba(156, 39, 176, 0.92)",
-            borderRadius: "4px"
+            background: "linear-gradient(60deg,#ab47bc,#8e24aa)",
+            borderRadius: "4px",
+            boxShadow:
+              "0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(156,39,176,.4)"
           }}
         >
           <Nav
@@ -84,7 +86,9 @@ const Charts = () => {
         </div>
       </div>
       <div className="container">
-        <ul style={{ listStyle: "none", paddingLeft: "0%" }}>
+        <ul
+          style={{ listStyle: "none", paddingLeft: "0%", paddingBottom: "11%" }}
+        >
           <li>
             <DummyComponent />
             <DummyComponent></DummyComponent>

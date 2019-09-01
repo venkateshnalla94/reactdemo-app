@@ -18,6 +18,29 @@
 .searchField:focus {
   outline: none;
 }
+.labelfield:focus {
+  outline: none;
+}
+.labelfield {
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 100;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: none;
+  padding-bottom: 4px;
+}
+#formlable:focus {
+  outline: none;
+}
+#formlable {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: inherit;
+  border-width: thin;
+}
 #table_head_weight {
   font-weight: 100 !important;
   border-top: 0px;

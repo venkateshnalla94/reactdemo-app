@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Link, Switch } from "react-router-dom";
 import NavigationDashboard from "../components/NavigationDashboard";
 import DashboardItem1 from "./dashboard/DashboardItem1";
+import UserProfile from "./dashboard/UserProfile";
 
 const Dashboard = () => {
   return (
@@ -24,6 +25,11 @@ const Dashboard = () => {
             <Route
               path="/Dashboard/DashboardItem1"
               component={DashboardItem1}
+              exact
+            />
+            <Route
+              path="/Dashboard/Userprofile"
+              component={UserProfile}
               exact
             />
           </Switch>

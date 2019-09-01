@@ -11,6 +11,7 @@ import Space from "./Space";
 import Charts from "./Charts";
 import Tables from "./Tables";
 import Header_Nav from "./Header_Nav";
+import Footer_Nav from "./Footer_Nav";
 
 const DashboardItem1 = () => {
   return (
@@ -65,17 +66,7 @@ const DashboardItem1 = () => {
         </div>
       </div>
       <hr style={{ marginTop: "10%" }}></hr>
-      <div className="row" style={{ fontWeight: "100" }}>
-        <div className="col-sm-2">Creative Tim</div>
-        <div className="col-sm-2">About US</div>
-        <div className="col-sm-2">Blog </div>
-        <div
-          className="col-sm-6 d-flex justify-content-end"
-          style={{ textAlign: "right" }}
-        >
-          <p>2019, made with favorite by Creative Tim for a better web.</p>
-        </div>
-      </div>
+      <Footer_Nav></Footer_Nav>
     </div>
   );
 };

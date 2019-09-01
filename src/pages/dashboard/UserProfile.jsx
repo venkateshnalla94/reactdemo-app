@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "../dashboard/Dashboard_css/item1.css";
 import Button from "react-bootstrap/Button";
+import Footer_Nav from "./Footer_Nav";
 const UserProfile = () => {
   return (
     <div>
@@ -206,7 +207,7 @@ const UserProfile = () => {
                   backgroundColor: "#9c27b0",
                   marginTop: "5%",
                   borderColor: "#9c27b0",
-                  WebkitBorderRadius: "500px"
+                  borderRadius: "500px"
                 }}
               >
                 Follow
@@ -215,6 +216,8 @@ const UserProfile = () => {
           </div>
         </div>
       </div>
+      <hr style={{ marginTop: "8%" }}></hr>
+      <Footer_Nav style={{ paddingBottom: "10px" }}></Footer_Nav>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import { Route, Link, Switch } from "react-router-dom";
 import NavigationDashboard from "../components/NavigationDashboard";
 import DashboardItem1 from "./dashboard/DashboardItem1";
 import UserProfile from "./dashboard/UserProfile";
+import Tabel_list from "./dashboard/Tabel_list";
 
 const Dashboard = () => {
   return (
@@ -32,6 +33,7 @@ const Dashboard = () => {
               component={UserProfile}
               exact
             />
+            <Route path="/Dashboard/TabelList" component={Tabel_list} exact />
           </Switch>
         </div>
       </div>

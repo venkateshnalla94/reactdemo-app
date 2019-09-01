@@ -47,14 +47,14 @@ const NavigationDashboard = () => {
             </Link>
           </Navbar>
           <Navbar id="nav_bar">
-            <Navbar.Brand href="#home" id="nav_bar">
+            <Link to="/Dashboard/TabelList" id="nav_bar">
               <FontAwesomeIcon
                 icon={faClipboardCheck}
                 style={{ cursor: "pointer" }}
               />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">Table List</h6>
-            </Navbar.Brand>
+            </Link>
           </Navbar>
           <Navbar id="nav_bar">
             <Navbar.Brand href="#home" id="nav_bar">

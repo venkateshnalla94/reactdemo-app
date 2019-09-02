@@ -33,7 +33,10 @@ const NavigationDashboard = () => {
             <Link to="/Dashboard/dashboardItem1" id="nav_bar">
               <FontAwesomeIcon
                 icon={faCalendar}
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  color: "#808080"
+                }}
               />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">Dashboard</h6>
@@ -41,7 +44,10 @@ const NavigationDashboard = () => {
           </Navbar>
           <Navbar id="nav_bar">
             <Link to="/Dashboard/userprofile" id="nav_bar">
-              <FontAwesomeIcon icon={faUser} style={{ cursor: "pointer" }} />
+              <FontAwesomeIcon
+                icon={faUser}
+                style={{ cursor: "pointer", color: "#808080" }}
+              />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">User Profile</h6>
             </Link>
@@ -50,7 +56,7 @@ const NavigationDashboard = () => {
             <Link to="/Dashboard/tabelList" id="nav_bar">
               <FontAwesomeIcon
                 icon={faClipboardCheck}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", color: "#808080" }}
               />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">Table List</h6>
@@ -60,7 +66,7 @@ const NavigationDashboard = () => {
             <Link to="/Dashboard/typograpghy" id="nav_bar">
               <FontAwesomeIcon
                 icon={faDrumstickBite}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", color: "#808080" }}
               />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">Typography</h6>
@@ -70,7 +76,7 @@ const NavigationDashboard = () => {
             <Link to="/Dashboard/icons" id="nav_bar">
               <FontAwesomeIcon
                 icon={faNewspaper}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", color: "#808080" }}
               />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">Icons</h6>
@@ -80,7 +86,7 @@ const NavigationDashboard = () => {
             <Navbar.Brand href="#home" id="nav_bar">
               <FontAwesomeIcon
                 icon={faMapMarkerAlt}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", color: "#808080" }}
               />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">Maps</h6>
@@ -88,7 +94,10 @@ const NavigationDashboard = () => {
           </Navbar>
           <Navbar id="nav_bar">
             <Link to="/Dashboard/notifications" id="nav_bar">
-              <FontAwesomeIcon icon={faBell} style={{ cursor: "pointer" }} />
+              <FontAwesomeIcon
+                icon={faBell}
+                style={{ cursor: "pointer", color: "#808080" }}
+              />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">Notifications</h6>
             </Link>
@@ -97,7 +106,7 @@ const NavigationDashboard = () => {
             <Navbar.Brand href="#home" id="nav_bar">
               <FontAwesomeIcon
                 icon={faSnowboarding}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", color: "#808080" }}
               />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">RTL Support</h6>
@@ -107,7 +116,7 @@ const NavigationDashboard = () => {
             <Link to="/Dashboard/upgradetopro" id="pro_verson">
               <FontAwesomeIcon
                 icon={faChevronCircleUp}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", color: "#808080" }}
               />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">Upgrade To Pro</h6>

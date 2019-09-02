@@ -19,45 +19,53 @@ import LandingFreeDemo from "../../../pages/landing/LandingFreeDemo";
 
 import LandingComment from "../../../pages/landing/LandingComment";
 import Footer from "../../../components/Footer";
-
+// window.onscroll = function() {
+//   myFunction();
+// };
+// var navbar = document.getElementById("nav_bar");
+// var sticky = navbar.offsetTop;
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky");
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
 const First_Page = () => {
+  //
   return (
     <div>
-      <div>
+      <div className="nav_bar">
+        <Navbar expand="lg" variant="light" bg="dark">
+          <Container>
+            <Navbar.Brand id="navbar_content" href="#">
+              CreativeTim
+            </Navbar.Brand>
+            <Navbar.Brand id="navbar_content" href="#">
+              <FontAwesomeIcon icon={faSearch} style={{ cursor: "pointer" }} />
+            </Navbar.Brand>
+            <Navbar.Brand id="navbar_content" href="#">
+              <FontAwesomeIcon icon={faListAlt} style={{ cursor: "pointer" }} />
+            </Navbar.Brand>
+
+            <Link id="navbar_content" to="Dashboard">
+              <FontAwesomeIcon
+                icon={faGift}
+                style={{ cursor: "pointer" }}
+                to="/NavigationDashboard"
+              />
+            </Link>
+
+            <Navbar.Brand id="navbar_content" href="#">
+              <FontAwesomeIcon icon={faBlog} style={{ cursor: "pointer" }} />
+            </Navbar.Brand>
+          </Container>
+        </Navbar>
+      </div>
+
+      <div className="row" style={{ height: "3500px" }}>
         <div id="grad1">
           <div className="container">
-            <Navbar expand="lg" variant="light" bg="light">
-              <Container>
-                <Navbar.Brand href="#">CreativeTim</Navbar.Brand>
-                <Navbar.Brand href="#">
-                  <FontAwesomeIcon
-                    icon={faSearch}
-                    style={{ cursor: "pointer" }}
-                  />
-                </Navbar.Brand>
-                <Navbar.Brand href="#">
-                  <FontAwesomeIcon
-                    icon={faListAlt}
-                    style={{ cursor: "pointer" }}
-                  />
-                </Navbar.Brand>
-
-                <Link to="Dashboard">
-                  <FontAwesomeIcon
-                    icon={faGift}
-                    style={{ cursor: "pointer" }}
-                    to="/NavigationDashboard"
-                  />
-                </Link>
-
-                <Navbar.Brand href="#">
-                  <FontAwesomeIcon
-                    icon={faBlog}
-                    style={{ cursor: "pointer" }}
-                  />
-                </Navbar.Brand>
-              </Container>
-            </Navbar>
             <div className="row">
               <div className="col-sm-6">
                 <img src="https://s3.amazonaws.com/creativetim_bucket/products/171/original/opt_nukp_react_thumbnail.jpg?1564486765" />

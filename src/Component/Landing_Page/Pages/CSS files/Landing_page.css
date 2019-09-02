@@ -4,6 +4,26 @@ img {
   width: 100%;
   height: auto;
 }
+#hehu {
+  position: sticky;
+  z-index: 999 !important;
+}
+#navbar_content {
+  color: white;
+  font-weight: 100;
+}
+#navbar_content:hover {
+  color: black;
+}
+
+.nav_bar {
+  position: -webkit-sticky;
+  z-index: 999 !important;
+  position: sticky !important;
+  top: 0;
+  color: black;
+}
+
 #grad1 {
   height: 1750px;
   /* background-color: #51c9f5; */

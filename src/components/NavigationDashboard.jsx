@@ -22,7 +22,7 @@ import DashboardItem1 from "../pages/dashboard/DashboardItem1";
 const NavigationDashboard = () => {
   return (
     <div>
-      <div className="col" id="layer">
+      <div id="layer">
         <div className="container-fluid" id="white_smoke">
           <h4 className="d-flex justify-content-center">
             <span id="sideBar_heading">Creative Tim</span>

@@ -21,7 +21,7 @@ const Dashboard = () => {
           className="col-sm-9"
           style={{
             background: "#e0dddd3d",
-            height: "780px",
+            height: "100vh",
             overflow: "scroll",
             paddingBottom: "5%"
           }}

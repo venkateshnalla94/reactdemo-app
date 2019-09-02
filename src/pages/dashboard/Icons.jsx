@@ -42,7 +42,10 @@ const Icons = () => {
               Handcrafted by our friends from Google
             </h6>
           </div>
-          <div className="container">
+          <div
+            className="container"
+            style={{ marginLeft: "20%", marginTop: "5%" }}
+          >
             <iframe
               width="560"
               height="315"

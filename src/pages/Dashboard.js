@@ -7,6 +7,7 @@ import Tabel_list from "./dashboard/Tabel_list";
 import Typography from "./dashboard/Typography";
 import Icons from "./dashboard/Icons";
 import UpgradePro from "./dashboard/UpgradePro";
+import Notifications from "./dashboard/Notifications";
 
 const Dashboard = () => {
   return (
@@ -39,6 +40,11 @@ const Dashboard = () => {
             <Route path="/Dashboard/tabelList" component={Tabel_list} exact />
             <Route path="/Dashboard/typograpghy" component={Typography} exact />
             <Route path="/Dashboard/icons" component={Icons} exact />
+            <Route
+              path="/Dashboard/notifications"
+              component={Notifications}
+              exact
+            />
             <Route
               path="/Dashboard/upgradetopro"
               component={UpgradePro}

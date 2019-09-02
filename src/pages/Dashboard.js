@@ -4,6 +4,7 @@ import NavigationDashboard from "../components/NavigationDashboard";
 import DashboardItem1 from "./dashboard/DashboardItem1";
 import UserProfile from "./dashboard/UserProfile";
 import Tabel_list from "./dashboard/Tabel_list";
+import Typography from "./dashboard/Typography";
 
 const Dashboard = () => {
   return (
@@ -24,16 +25,17 @@ const Dashboard = () => {
         >
           <Switch>
             <Route
-              path="/Dashboard/DashboardItem1"
+              path="/Dashboard/dashboardItem1"
               component={DashboardItem1}
               exact
             />
             <Route
-              path="/Dashboard/Userprofile"
+              path="/Dashboard/userprofile"
               component={UserProfile}
               exact
             />
-            <Route path="/Dashboard/TabelList" component={Tabel_list} exact />
+            <Route path="/Dashboard/tabelList" component={Tabel_list} exact />
+            <Route path="/Dashboard/typograpghy" component={Typography} exact />
           </Switch>
         </div>
       </div>

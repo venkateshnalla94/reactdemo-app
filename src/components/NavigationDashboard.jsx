@@ -30,7 +30,7 @@ const NavigationDashboard = () => {
           <hr />
 
           <Navbar id="nav_bar">
-            <Link to="/Dashboard/DashboardItem1" id="nav_bar">
+            <Link to="/Dashboard/dashboardItem1" id="nav_bar">
               <FontAwesomeIcon
                 icon={faCalendar}
                 style={{ cursor: "pointer" }}
@@ -40,14 +40,14 @@ const NavigationDashboard = () => {
             </Link>
           </Navbar>
           <Navbar id="nav_bar">
-            <Link to="/Dashboard/Userprofile" id="nav_bar">
+            <Link to="/Dashboard/userprofile" id="nav_bar">
               <FontAwesomeIcon icon={faUser} style={{ cursor: "pointer" }} />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">User Profile</h6>
             </Link>
           </Navbar>
           <Navbar id="nav_bar">
-            <Link to="/Dashboard/TabelList" id="nav_bar">
+            <Link to="/Dashboard/tabelList" id="nav_bar">
               <FontAwesomeIcon
                 icon={faClipboardCheck}
                 style={{ cursor: "pointer" }}
@@ -57,14 +57,14 @@ const NavigationDashboard = () => {
             </Link>
           </Navbar>
           <Navbar id="nav_bar">
-            <Navbar.Brand href="#home" id="nav_bar">
+            <Link to="/Dashboard/typograpghy" id="nav_bar">
               <FontAwesomeIcon
                 icon={faDrumstickBite}
                 style={{ cursor: "pointer" }}
               />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">Typography</h6>
-            </Navbar.Brand>
+            </Link>
           </Navbar>
           <Navbar id="nav_bar">
             <Navbar.Brand href="#home" id="nav_bar">

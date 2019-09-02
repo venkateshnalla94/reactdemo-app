@@ -105,8 +105,7 @@ const Tabel_list = () => {
               width: "95%",
               marginTop: "-4%",
               background: "linear-gradient(60deg,#ab47bc,#8e24aa)",
-              borderRadius: "2px",
-              opacity: ".9"
+              borderRadius: "2px"
             }}
           >
             <h3 style={{ fontWeight: "200", color: "white", paddingTop: "2%" }}>

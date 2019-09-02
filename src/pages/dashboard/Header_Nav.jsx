@@ -10,7 +10,9 @@ import {
 const Header_Nav = props => {
   return (
     <div className="row" id="top_heading">
-      <h4 style={{ fontSize: "1.5rem", fontWeight: "100" }}>{props.name}</h4>
+      <h4 style={{ fontSize: "1.5rem", fontWeight: "100", width: "122px" }}>
+        {props.name}
+      </h4>
       <input className="searchField" type="text" placeholder="Search" />
       <div className="col-sm-1">
         <FontAwesomeIcon

@@ -6,7 +6,17 @@ const LandingFreeDemo = () => {
     <div className="free_demo">
       <div className="row">
         <div className="col-sm-12">
-          <h2 id="item_Demo">Get Free Demo</h2>
+          <h2
+            style={{
+              marginBottom: "0%",
+              fontSize: "40px",
+              fontWeight: "100",
+              marginTop: "5%",
+              marginLeft: "10%"
+            }}
+          >
+            Get Free Demo
+          </h2>
         </div>
       </div>
       <div className="row" id="demo_desc">

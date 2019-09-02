@@ -67,14 +67,14 @@ const NavigationDashboard = () => {
             </Link>
           </Navbar>
           <Navbar id="nav_bar">
-            <Navbar.Brand href="#home" id="nav_bar">
+            <Link to="/Dashboard/icons" id="nav_bar">
               <FontAwesomeIcon
                 icon={faNewspaper}
                 style={{ cursor: "pointer" }}
               />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">Icons</h6>
-            </Navbar.Brand>
+            </Link>
           </Navbar>
           <Navbar id="nav_bar">
             <Navbar.Brand href="#home" id="nav_bar">
@@ -104,14 +104,14 @@ const NavigationDashboard = () => {
             </Navbar.Brand>
           </Navbar>
           <Navbar id="nav_bar">
-            <Navbar.Brand href="#home" id="pro_verson">
+            <Link to="/Dashboard/upgradetopro" id="pro_verson">
               <FontAwesomeIcon
                 icon={faChevronCircleUp}
                 style={{ cursor: "pointer" }}
               />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">Upgrade To Pro</h6>
-            </Navbar.Brand>
+            </Link>
           </Navbar>
         </div>
       </div>

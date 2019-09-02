@@ -5,6 +5,8 @@ import DashboardItem1 from "./dashboard/DashboardItem1";
 import UserProfile from "./dashboard/UserProfile";
 import Tabel_list from "./dashboard/Tabel_list";
 import Typography from "./dashboard/Typography";
+import Icons from "./dashboard/Icons";
+import UpgradePro from "./dashboard/UpgradePro";
 
 const Dashboard = () => {
   return (
@@ -36,6 +38,12 @@ const Dashboard = () => {
             />
             <Route path="/Dashboard/tabelList" component={Tabel_list} exact />
             <Route path="/Dashboard/typograpghy" component={Typography} exact />
+            <Route path="/Dashboard/icons" component={Icons} exact />
+            <Route
+              path="/Dashboard/upgradetopro"
+              component={UpgradePro}
+              exact
+            />
           </Switch>
         </div>
       </div>

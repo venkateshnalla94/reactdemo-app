@@ -26,6 +26,7 @@
 #layer {
   width: 350px;
   height: 780px;
+  overflow: hidden;
   display: block;
   position: relative;
   padding-bottom: 25px;

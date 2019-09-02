@@ -41,15 +41,15 @@ const First_Page = () => {
                     style={{ cursor: "pointer" }}
                   />
                 </Navbar.Brand>
-                <Navbar.Brand href="#">
-                  <Link to="Dashboard">
-                    <FontAwesomeIcon
-                      icon={faGift}
-                      style={{ cursor: "pointer" }}
-                      to="/NavigationDashboard"
-                    />
-                  </Link>
-                </Navbar.Brand>
+
+                <Link to="Dashboard">
+                  <FontAwesomeIcon
+                    icon={faGift}
+                    style={{ cursor: "pointer" }}
+                    to="/NavigationDashboard"
+                  />
+                </Link>
+
                 <Navbar.Brand href="#">
                   <FontAwesomeIcon
                     icon={faBlog}

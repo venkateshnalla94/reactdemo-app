@@ -63,7 +63,7 @@ const First_Page = () => {
         </Navbar>
       </div>
 
-      <div className="row" style={{ height: "3500px" }}>
+      <div className="row" style={{ height: "3400px" }}>
         <div id="grad1">
           <div className="container">
             <div className="row">

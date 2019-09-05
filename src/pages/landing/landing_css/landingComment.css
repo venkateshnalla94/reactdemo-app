@@ -28,6 +28,21 @@
   border-style: solid;
   border-color: rgba(255, 149, 0, 0.55);
 }
+#footer_icons {
+  margin-left: 5%;
+
+  width: 3%;
+  padding: 5px;
+  height: auto;
+  border-width: thin;
+  /* padding: 0.6rem; */
+  color: #d4d0d0;
+  background: #36275d;
+  border-radius: 50%;
+  font-weight: 100;
+  border-color: #d4d0d0;
+  border-style: solid;
+}
 .comment_heading {
   margin-top: 5%;
 

@@ -2,11 +2,7 @@
   /* background: #3e3d3df2; */
   padding-bottom: 200px;
 
-  background-image: linear-gradient(
-    to top,
-    rgba(255, 0, 0, 0) 10%,
-    #3e3d3df2 10%
-  );
+  background: linear-gradient(135deg, rgba(62, 62, 62, 0.89) 0%, #151515 100%);
 }
 
 #feedback_container {

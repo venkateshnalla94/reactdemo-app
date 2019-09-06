@@ -1,9 +1,23 @@
 import React from "react";
 import "../landing/landing_css/landingComment.css";
 import Button from "react-bootstrap/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAirFreshener, faComment } from "@fortawesome/free-solid-svg-icons";
 const LandingComment = () => {
   return (
     <div className="landingComment">
+      <FontAwesomeIcon
+        icon={faComment}
+        style={{
+          color: "grey",
+          width: "225px",
+          height: "auto",
+          position: "absolute",
+          marginLeft: "45%",
+          marginTop: "25%",
+          WebkitBackgroundSize: "10%"
+        }}
+      ></FontAwesomeIcon>
       <div className="row">
         <div className="col-sm-7" id="feedback_container">
           <div className="container">

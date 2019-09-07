@@ -1,18 +1,18 @@
 #top_heading {
-  margin-top: 4%;
+  margin-top: 1%;
   font-size: 40px;
   font-weight: 150 !important;
 }
 .searchField {
-  margin-left: 35%;
-  width: 20%;
   height: 33px;
   font-size: 1rem;
   font-weight: 100;
   border-top: none;
   border-left: none;
   border-right: none;
+  border: none;
   background: none;
+  border-radius: 500px;
 }
 
 .searchField:focus {
@@ -46,18 +46,18 @@
   border-top: 0px;
 }
 #fontAwesomSearch {
-  /* width: 65%; */
+  width: 25px;
+  /* margin-left: 5%; */
+  padding: 5px;
   height: auto;
-  margin-bottom: 40%;
-  padding: 0.6rem;
-  color: gray;
-  background: white;
-
-  border-radius: 20%;
-  font-weight: 100;
-
+  border-width: thin;
+  /* padding: 0.6rem; */
+  color: #d4d0d0;
+  background: #343a40;
   border-radius: 50%;
-  border-color: #c3c3c3;
+  font-weight: 100;
+  border-color: #ffffff;
+  border-style: solid;
 }
 .activeLinks {
   color: white !important;

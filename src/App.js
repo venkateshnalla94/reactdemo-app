@@ -28,7 +28,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-          <Route path="/" component={Usermang} exact />
+          <Route path="/" component={First_Page} exact />
           <Route path="/Usermangment" component={Usermang} />
           <Route path="/Userform" component={Userform} exact />
           <Route path="/Editrole" component={Editrole} exact />

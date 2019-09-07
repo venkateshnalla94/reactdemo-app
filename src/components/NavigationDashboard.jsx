@@ -102,15 +102,15 @@ const NavigationDashboard = () => {
               <h6 id="side_bar_headings">Notifications</h6>
             </Link>
           </Navbar>
-          <Navbar id="nav_bar">
-            <Navbar.Brand href="#home" id="nav_bar">
+          <Navbar id="nav_bar" style={{ marginBottom: "30%" }}>
+            <Link to="#home" id="nav_bar">
               <FontAwesomeIcon
                 icon={faSnowboarding}
                 style={{ cursor: "pointer", color: "#808080" }}
               />
               &nbsp;&nbsp;&nbsp;
               <h6 id="side_bar_headings">RTL Support</h6>
-            </Navbar.Brand>
+            </Link>
           </Navbar>
           <Navbar id="nav_bar">
             <Link to="/Dashboard/upgradetopro" id="pro_verson">

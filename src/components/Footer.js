@@ -1,6 +1,16 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import "../pages/landing/landing_css/footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCodeBranch,
+  faSatelliteDish,
+  faBaseballBall,
+  faCertificate,
+  faRetweet,
+  faWineGlassAlt,
+  faMapPin
+} from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <div id="footerComponent">
@@ -93,7 +103,50 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr />
+        <hr style={{ color: "grey", borderTop: "2px solid white" }} />
+        <div
+          className="row d-flex justify-content-center"
+          style={{ marginTop: "15%" }}
+        >
+          <FontAwesomeIcon
+            id="footer_icons"
+            icon={faSatelliteDish}
+            style={{ cursor: "pointer" }}
+          />
+          <FontAwesomeIcon
+            id="footer_icons"
+            icon={faBaseballBall}
+            style={{ cursor: "pointer" }}
+          />
+          <FontAwesomeIcon
+            id="footer_icons"
+            icon={faCertificate}
+            style={{ cursor: "pointer" }}
+          />
+          <FontAwesomeIcon
+            id="footer_icons"
+            icon={faRetweet}
+            style={{ cursor: "pointer" }}
+          />
+          {/* <FontAwesomeIcon
+            id="footer_icons"
+            icon={faWineGlassAlt}
+            style={{ cursor: "pointer" }}
+          /> */}
+          {/* <FontAwesomeIcon
+            id="footer_icons"
+            icon={faMapPin}
+            style={{ cursor: "pointer" }}
+          /> */}
+        </div>
+        <p
+          className="d-flex justify-content-center"
+          style={{ marginTop: "5%" }}
+        >
+          {" "}
+          &copy; 2019 Creative Tim, all rights reserved. Made with for a better
+          web.
+        </p>
       </div>
     </div>
   );

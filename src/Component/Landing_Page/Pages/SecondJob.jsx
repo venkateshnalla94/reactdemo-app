@@ -155,48 +155,78 @@ const SecondJob = () => {
             <div className="container ">
               <div className="row">
                 <div className="col d-flex justify-content-center">
-                  <FontAwesomeIcon
-                    id="icons"
-                    icon={faEnvelopeOpen}
-                    style={{ cursor: "pointer" }}
-                  />
+                  <div>
+                    <FontAwesomeIcon
+                      id="icons"
+                      icon={faEnvelopeOpen}
+                      style={{ cursor: "pointer" }}
+                    />
+                    <h5 style={{ marginLeft: "-15%", fontWeight: "100" }}>
+                      Envelope
+                    </h5>
+                  </div>
                 </div>
                 <div className="col d-flex justify-content-center">
-                  <FontAwesomeIcon
-                    id="icons"
-                    icon={faCogs}
-                    style={{ cursor: "pointer" }}
-                  />
+                  <div>
+                    <FontAwesomeIcon
+                      id="icons"
+                      icon={faCogs}
+                      style={{ cursor: "pointer" }}
+                    />
+                    <h5 style={{ marginLeft: "-15%", fontWeight: "100" }}>
+                      Settings
+                    </h5>
+                  </div>
                 </div>
                 <div className="col d-flex justify-content-center">
-                  <FontAwesomeIcon
-                    id="icons"
-                    icon={faImage}
-                    style={{ cursor: "pointer" }}
-                  />
+                  <div>
+                    <FontAwesomeIcon
+                      id="icons"
+                      icon={faImage}
+                      style={{ cursor: "pointer" }}
+                    />
+                    <h5 style={{ marginLeft: "-15%", fontWeight: "100" }}>
+                      Gallery
+                    </h5>
+                  </div>
                 </div>
               </div>
               <div className="row" id="second_row_icons">
                 <div className="col d-flex justify-content-center">
-                  <FontAwesomeIcon
-                    id="icons"
-                    icon={faBacon}
-                    style={{ cursor: "pointer" }}
-                  />
+                  <div>
+                    <FontAwesomeIcon
+                      id="icons"
+                      icon={faBacon}
+                      style={{ cursor: "pointer" }}
+                    />
+                    <h5 style={{ marginLeft: "-15%", fontWeight: "100" }}>
+                      Themes
+                    </h5>
+                  </div>
                 </div>
                 <div className="col d-flex justify-content-center">
-                  <FontAwesomeIcon
-                    id="icons"
-                    icon={faFileAlt}
-                    style={{ cursor: "pointer" }}
-                  />
+                  <div>
+                    <FontAwesomeIcon
+                      id="icons"
+                      icon={faFileAlt}
+                      style={{ cursor: "pointer" }}
+                    />
+                    <h5 style={{ marginLeft: "-15%", fontWeight: "100" }}>
+                      Files
+                    </h5>
+                  </div>
                 </div>
                 <div className="col d-flex justify-content-center">
-                  <FontAwesomeIcon
-                    id="icons"
-                    icon={faMobileAlt}
-                    style={{ cursor: "pointer" }}
-                  />
+                  <div>
+                    <FontAwesomeIcon
+                      id="icons"
+                      icon={faMobileAlt}
+                      style={{ cursor: "pointer" }}
+                    />
+                    <h5 style={{ marginLeft: "-15%", fontWeight: "100" }}>
+                      Mobile
+                    </h5>
+                  </div>
                 </div>
               </div>
             </div>

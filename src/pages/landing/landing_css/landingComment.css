@@ -2,11 +2,7 @@
   /* background: #3e3d3df2; */
   padding-bottom: 200px;
 
-  background-image: linear-gradient(
-    to top,
-    rgba(255, 0, 0, 0) 10%,
-    #3e3d3df2 10%
-  );
+  background: linear-gradient(135deg, rgba(62, 62, 62, 0.89) 0%, #151515 100%);
 }
 
 #feedback_container {
@@ -27,6 +23,21 @@
   border-radius: 50%;
   border-style: solid;
   border-color: rgba(255, 149, 0, 0.55);
+}
+#footer_icons {
+  margin-left: 5%;
+
+  width: 3%;
+  padding: 5px;
+  height: auto;
+  border-width: thin;
+  /* padding: 0.6rem; */
+  color: #d4d0d0;
+  background: #36275d;
+  border-radius: 50%;
+  font-weight: 100;
+  border-color: #d4d0d0;
+  border-style: solid;
 }
 .comment_heading {
   margin-top: 5%;

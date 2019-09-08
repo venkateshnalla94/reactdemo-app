@@ -13,7 +13,10 @@ const Dashboard = () => {
   return (
     <div>
       <div className="row">
-        <div className="col-sm-3">
+        <div
+          className="col-sm-3"
+          style={{ paddingRight: "0%", paddingLeft: "inherit" }}
+        >
           <NavigationDashboard />
         </div>
 

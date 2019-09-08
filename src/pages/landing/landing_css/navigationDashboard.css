@@ -35,13 +35,15 @@
 }
 
 #layer {
-  width: 350px;
+  /* filter: grayscale(100%); */
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   display: block;
   position: relative;
   padding-bottom: 25px;
   margin-right: 10%;
+  /* background: url("https://demos.creative-tim.com/material-dashboard/assets/img/sidebar-1.jpg"); */
 }
 #layer::after {
   content: "";
@@ -54,5 +56,7 @@
   position: absolute;
   z-index: -1;
 }
-
+.grayscale {
+  filter: grayscale(50%);
+}
 /*  */

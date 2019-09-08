@@ -2,6 +2,7 @@
   margin-top: 1%;
   font-size: 40px;
   font-weight: 150 !important;
+  position: sticky;
 }
 .searchField {
   height: 33px;

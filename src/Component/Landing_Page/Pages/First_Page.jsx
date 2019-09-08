@@ -38,15 +38,15 @@ const First_Page = () => {
       <div className="nav_bar">
         <Navbar expand="lg" variant="light" bg="dark">
           <Container>
-            <Navbar.Brand id="navbar_content" href="#">
+            <Link id="navbar_content" href="#">
               CreativeTim
-            </Navbar.Brand>
-            <Navbar.Brand id="navbar_content" href="#">
+            </Link>
+            <Link to="Dashboard" id="navbar_content" href="#">
               <FontAwesomeIcon icon={faSearch} style={{ cursor: "pointer" }} />
-            </Navbar.Brand>
-            <Navbar.Brand id="navbar_content" href="#">
+            </Link>
+            <Link to="Dashboard" id="navbar_content" href="#">
               <FontAwesomeIcon icon={faListAlt} style={{ cursor: "pointer" }} />
-            </Navbar.Brand>
+            </Link>
 
             <Link id="navbar_content" to="Dashboard">
               <FontAwesomeIcon
@@ -56,9 +56,9 @@ const First_Page = () => {
               />
             </Link>
 
-            <Navbar.Brand id="navbar_content" href="#">
+            <Link to="Dashboard" id="navbar_content" href="#">
               <FontAwesomeIcon icon={faBlog} style={{ cursor: "pointer" }} />
-            </Navbar.Brand>
+            </Link>
           </Container>
         </Navbar>
       </div>

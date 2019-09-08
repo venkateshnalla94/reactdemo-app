@@ -57,9 +57,7 @@ const Footer = () => {
               <div className="col-sm-2">
                 <h6>Company</h6>
                 <ul id="listItems">
-                  <li id="nav">
-                    <a>dsadsa</a>
-                  </li>
+                  <li id="nav">Home</li>
                   <li id="nav">Frrebies</li>
                   <li id="nav">Premium</li>
                   <li id="nav">Blog</li>

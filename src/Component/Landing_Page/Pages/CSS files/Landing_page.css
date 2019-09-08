@@ -17,7 +17,6 @@ img {
 }
 
 .nav_bar {
-  position: -webkit-sticky;
   z-index: 999 !important;
   position: sticky !important;
   top: 0;

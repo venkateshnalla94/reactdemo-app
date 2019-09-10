@@ -41,8 +41,8 @@
     rgb(212, 212, 212) 80%
   );
 
-  height: 1200px;
-  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  padding-bottom: 5%;
 }
 #item_tagline_page2 {
   font-size: 20px;

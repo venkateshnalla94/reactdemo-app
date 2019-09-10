@@ -13,38 +13,47 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
-    <div id="footerComponent">
+    <div id="footerComponent" style={{ width: "100%" }}>
       <div className="container">
         <div className="row d-flex justify-content-center" id="subscribeBox">
           {/* Subscribe Box */}
           <div className=" col-sm-12 " id="figures_content">
             <div className="container" id="section_num">
-              <h4 id="figures">
-                <b>855,872</b>
-                <p>Accounts</p>
-              </h4>
-              <h4 id="figures">
-                <b>1,544,467</b>
-                <p>Downloads</p>
-              </h4>
-              <h4 id="figures">
-                <b>118</b>
-                <p>Products</p>
-              </h4>
-              <div className="col-sm-4">
-                <h6 id="subEmail">Join our newsletter</h6>
-                <input
-                  id="emailBox"
-                  type="email"
-                  className="form-control"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter email"
-                />
-              </div>
-              <div className="col-sm-2" id="figures">
-                <Button id="join" block>
-                  Join
-                </Button>
+              <div className="row">
+                <div className="col-sm-2">
+                  <h4 id="figures">
+                    <b>855,872</b>
+                    <p>Accounts</p>
+                  </h4>
+                </div>
+                <div className="col-sm-2">
+                  <h4 id="figures">
+                    <b>1,544,467</b>
+                    <p>Downloads</p>
+                  </h4>
+                </div>
+                <div className="col-sm-2">
+                  <h4 id="figures">
+                    <b>118</b>
+                    <p>Products</p>
+                  </h4>
+                </div>
+
+                <div className="col-sm-3">
+                  <h6 id="subEmail">Join our newsletter</h6>
+                  <input
+                    id="emailBox"
+                    type="email"
+                    className="form-control"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div className="col-sm-3" id="figures">
+                  <Button id="join" block>
+                    Join
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
@@ -107,22 +116,22 @@ const Footer = () => {
           style={{ marginTop: "15%" }}
         >
           <FontAwesomeIcon
-            id="footer_icons"
+            id="footer_icons1"
             icon={faSatelliteDish}
             style={{ cursor: "pointer" }}
           />
           <FontAwesomeIcon
-            id="footer_icons"
+            id="footer_icons1"
             icon={faBaseballBall}
             style={{ cursor: "pointer" }}
           />
           <FontAwesomeIcon
-            id="footer_icons"
+            id="footer_icons1"
             icon={faCertificate}
             style={{ cursor: "pointer" }}
           />
           <FontAwesomeIcon
-            id="footer_icons"
+            id="footer_icons1"
             icon={faRetweet}
             style={{ cursor: "pointer" }}
           />
@@ -132,7 +141,7 @@ const Footer = () => {
             style={{ cursor: "pointer" }}
           /> */}
           {/* <FontAwesomeIcon
-            id="footer_icons"
+            id="footer_icons1"
             icon={faMapPin}
             style={{ cursor: "pointer" }}
           /> */}

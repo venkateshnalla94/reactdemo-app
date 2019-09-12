@@ -104,8 +104,8 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="col-sm-3" id="img_placeholder">
-                <img src="http://lorempixel.com/400/200" />
-                <img src="http://lorempixel.com/400/200/sports" />
+                <img src="https://cdn-static.denofgeek.com/sites/denofgeek/files/styles/main_wide/public/2019/09/spider-man_ps4.png?itok=cN6BnvYs" />
+                <img src="https://c4.wallpaperflare.com/wallpaper/203/59/805/son-goku-dragon-ball-dragon-ball-z-wallpaper-preview.jpg" />
               </div>
             </div>
           </div>

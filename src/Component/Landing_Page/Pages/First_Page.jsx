@@ -23,7 +23,7 @@ import Footer from "../../../components/Footer";
 const First_Page = () => {
   //
   return (
-    <div>
+    <div className="grid">
       <div className="nav_bar">
         <Navbar expand="lg" variant="light" bg="dark">
           <Container>
@@ -51,7 +51,6 @@ const First_Page = () => {
           </Container>
         </Navbar>
       </div>
-
       <div className="row">
         <div id="grad1" style={{ width: "100%", height: "100%" }}>
           <div className="container">

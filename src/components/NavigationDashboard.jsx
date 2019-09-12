@@ -82,14 +82,14 @@ const NavigationDashboard = () => {
           </Link>
         </Navbar>
         <Navbar id="nav_bar">
-          <Navbar.Brand href="#home" id="nav_bar">
+          <Link to="/" id="nav_bar">
             <FontAwesomeIcon
               icon={faMapMarkerAlt}
               style={{ cursor: "pointer", color: "#808080" }}
             />
             &nbsp;&nbsp;&nbsp;
             <h6 id="side_bar_headings">Maps</h6>
-          </Navbar.Brand>
+          </Link>
         </Navbar>
         <Navbar id="nav_bar">
           <Link to="/Dashboard/notifications" id="nav_bar">
@@ -102,7 +102,7 @@ const NavigationDashboard = () => {
           </Link>
         </Navbar>
         <Navbar id="nav_bar" style={{ marginBottom: "30%" }}>
-          <Link to="#home" id="nav_bar">
+          <Link to="/" id="nav_bar">
             <FontAwesomeIcon
               icon={faSnowboarding}
               style={{ cursor: "pointer", color: "#808080" }}

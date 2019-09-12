@@ -26,67 +26,74 @@ import Button from "react-bootstrap/Button";
 import { bold } from "ansi-colors";
 const SecondJob = () => {
   return (
-    <div id="secondJob">
+    <div id="secondJob" style={{ width: "98%", marginLeft: "1%" }}>
       <div className="container" id="border_Box">
         <div className="row">
           <div className="col-sm-8" id="box_beginning">
-            <div className="row">
-              <div className="col-sm-4 d-flex ">
-                <div className="small_info">
+            <div className="container">
+              <div className="row">
+                <div className="col-sm-4 d-flex ">
+                  <div className="small_info">
+                    <FontAwesomeIcon
+                      id="cloud_download"
+                      icon={faCloudDownloadAlt}
+                      style={{ cursor: "pointer" }}
+                    />
+                  </div>
+                  <h6 id="description">Downloads</h6>
+                </div>
+                <div className="col-sm-4 d-flex">
                   <FontAwesomeIcon
                     id="cloud_download"
-                    icon={faCloudDownloadAlt}
+                    icon={faComment}
                     style={{ cursor: "pointer" }}
                   />
+                  <h6 id="description">Comments</h6>
                 </div>
-                <h6 id="description">Downloads</h6>
-              </div>
-              <div className="col-sm-4 d-flex">
-                <FontAwesomeIcon
-                  id="cloud_download"
-                  icon={faComment}
-                  style={{ cursor: "pointer" }}
-                />
-                <h6 id="description">Comments</h6>
-              </div>
-              <div className="col-sm-4 d-flex ">
-                <FontAwesomeIcon
-                  id="cloud_download"
-                  icon={faBriefcaseMedical}
-                  style={{ cursor: "pointer" }}
-                />
-                <h6 id="description">Premium Support</h6>
+                <div className="col-sm-4 d-flex ">
+                  <FontAwesomeIcon
+                    id="cloud_download"
+                    icon={faBriefcaseMedical}
+                    style={{ cursor: "pointer" }}
+                  />
+                  <h6 id="description">Premium Support</h6>
+                </div>
               </div>
             </div>
-            <div className="row" id="icon_col_2">
-              <div className="col-sm-4 d-flex ">
-                <FontAwesomeIcon
-                  id="cloud_download"
-                  icon={faGift}
-                  style={{ cursor: "pointer" }}
-                />
-                <h6 id="description">Updates</h6>
-              </div>
-              <div className="col-sm-4 d-flex">
-                <FontAwesomeIcon
-                  id="cloud_download"
-                  icon={faBriefcase}
-                  style={{ cursor: "pointer" }}
-                />
-                <h6 id="description">Release</h6>
-              </div>
-              <div className="col-sm-4 d-flex">
-                <FontAwesomeIcon
-                  id="cloud_download"
-                  icon={faSyncAlt}
-                  style={{ cursor: "pointer" }}
-                />
-                <h6 id="description">Recent Update</h6>
+            <div className="container" id="icon_col_2">
+              <div className="row">
+                <div className="col-sm-4 d-flex ">
+                  <FontAwesomeIcon
+                    id="cloud_download"
+                    icon={faGift}
+                    style={{ cursor: "pointer" }}
+                  />
+                  <h6 id="description">Updates</h6>
+                </div>
+                <div className="col-sm-4 d-flex">
+                  <FontAwesomeIcon
+                    id="cloud_download"
+                    icon={faBriefcase}
+                    style={{ cursor: "pointer" }}
+                  />
+                  <h6 id="description">Release</h6>
+                </div>
+                <div className="col-sm-4 d-flex">
+                  <FontAwesomeIcon
+                    id="cloud_download"
+                    icon={faSyncAlt}
+                    style={{ cursor: "pointer" }}
+                  />
+                  <h6 id="description">Recent Update</h6>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-md-4" id="box_beginning">
-            <div className="row d-flex justify-content-center" id="innerBox">
+          <div className="col-sm-4" id="box_beginning">
+            <div
+              className="container d-flex justify-content-center"
+              id="innerBox"
+            >
               <img
                 id="thumbnails"
                 src="https://www.creative-tim.com/assets/icon-html-7a445de6be8d1419c86371dddb3b8fb36f25de6e5b084fb777d258062ad1902d.jpg"
@@ -126,27 +133,32 @@ const SecondJob = () => {
             <h1 id="productDesc">Product description</h1>
           </div>
           <div className="col-sm-12 d-flex ">
-            <p className="d-flex justify-content-center" id="contentDesc">
-              Now UI Kit PRO Reactis a premium Bootstrap 4 kit provided by
-              Invision and Creative Tim. It is built over React, React Hooks and
-              Reactstrap using Create React App. It is a beautiful
-              cross-platform UI kit featuring over 1000 components, 34 sections
-              and 11 example pages.
-            </p>
+            <div className="container">
+              <p className="d-flex justify-content-center" id="contentDesc">
+                Now UI Kit PRO Reactis a premium Bootstrap 4 kit provided by
+                Invision and Creative Tim. It is built over React, React Hooks
+                and Reactstrap using Create React App. It is a beautiful
+                cross-platform UI kit featuring over 1000 components, 34
+                sections and 11 example pages.
+              </p>
 
-            <hr />
+              <p id="contentDesc_2">
+                Now UI Kit is one of the most popular UI Kits online, provided
+                in PSD and Sketch formats by Invision. We wanted to find a way
+                for developers worldwide to benefit from using it. We created
+                the fully coded version of Now UI Kit React
+              </p>
+              <Button
+                className="d-flex justify-content-center"
+                variant="light"
+                style={{ marginLeft: "44%" }}
+              >
+                View More
+              </Button>
+            </div>
           </div>
-          <div className="col-sm-12 d-flex ">
-            <p id="contentDesc_2">
-              Now UI Kit is one of the most popular UI Kits online, provided in
-              PSD and Sketch formats by Invision. We wanted to find a way for
-              developers worldwide to benefit from using it. We created the
-              fully coded version of Now UI Kit React
-            </p>
-          </div>
-          <div className="col-sm-12 d-flex justify-content-center">
-            <Button variant="light">View More</Button>
-          </div>
+          {/* <div className="col-sm-12 d-flex "></div>
+          <div className="col-sm-12 "></div> */}
         </div>
       </div>
       <div className="container">

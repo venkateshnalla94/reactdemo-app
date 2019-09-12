@@ -55,7 +55,7 @@ const LandingFreeDemo = () => {
             </div>
           </div>
           <div className="container_button">
-            <Button block id="ternary_button" variant="secondary">
+            <Button id="ternary_button" variant="secondary">
               Get Free Demo
             </Button>
           </div>

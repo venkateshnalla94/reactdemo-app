@@ -15,13 +15,13 @@
   /* color: white; */
 }
 #section_num {
-  display: flex;
+  display: inline;
   width: auto;
   margin-left: 20%;
 }
 #join {
-  margin-top: 27%;
-  -webkit-border-radius: 500px;
+  margin-top: 12%;
+  border-radius: 500px;
 }
 #subEmail {
   font-weight: 100;
@@ -55,4 +55,18 @@
   /* border-color: white; */
   border-style: hidden;
   /* -webkit-border-before-color: white; */
+}
+#footer_icons1 {
+  cursor: pointer;
+  width: 4%;
+  height: auto;
+  padding: 1%;
+  margin-left: 5%;
+  border-width: thin;
+  color: #d4d0d0;
+  background: #36275d;
+  border-radius: 50%;
+  font-weight: 100;
+  border-color: #d4d0d0;
+  border-style: solid;
 }

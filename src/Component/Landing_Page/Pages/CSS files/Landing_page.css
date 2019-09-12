@@ -1,3 +1,10 @@
+.grid {
+  display: grid;
+  width: 100%;
+  /* grid-template-columns: 1fr;
+  grid-template-rows: 1fr 10fr 3fr 3fr; */
+  /*  5   */
+}
 img {
   margin-top: 10%;
   border-radius: 2%;

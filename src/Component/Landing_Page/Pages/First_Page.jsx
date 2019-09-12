@@ -19,34 +19,23 @@ import LandingFreeDemo from "../../../pages/landing/LandingFreeDemo";
 
 import LandingComment from "../../../pages/landing/LandingComment";
 import Footer from "../../../components/Footer";
-// window.onscroll = function() {
-//   myFunction();
-// };
-// var navbar = document.getElementById("nav_bar");
-// var sticky = navbar.offsetTop;
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky");
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
+
 const First_Page = () => {
   //
   return (
-    <div>
+    <div className="grid">
       <div className="nav_bar">
         <Navbar expand="lg" variant="light" bg="dark">
           <Container>
-            <Navbar.Brand id="navbar_content" href="#">
+            <Link id="navbar_content" href="#">
               CreativeTim
-            </Navbar.Brand>
-            <Navbar.Brand id="navbar_content" href="#">
+            </Link>
+            <Link to="Dashboard" id="navbar_content" href="#">
               <FontAwesomeIcon icon={faSearch} style={{ cursor: "pointer" }} />
-            </Navbar.Brand>
-            <Navbar.Brand id="navbar_content" href="#">
+            </Link>
+            <Link to="Dashboard" id="navbar_content" href="#">
               <FontAwesomeIcon icon={faListAlt} style={{ cursor: "pointer" }} />
-            </Navbar.Brand>
+            </Link>
 
             <Link id="navbar_content" to="Dashboard">
               <FontAwesomeIcon
@@ -56,15 +45,14 @@ const First_Page = () => {
               />
             </Link>
 
-            <Navbar.Brand id="navbar_content" href="#">
+            <Link to="Dashboard" id="navbar_content" href="#">
               <FontAwesomeIcon icon={faBlog} style={{ cursor: "pointer" }} />
-            </Navbar.Brand>
+            </Link>
           </Container>
         </Navbar>
       </div>
-
-      <div className="row" style={{ height: "3400px" }}>
-        <div id="grad1">
+      <div className="row">
+        <div id="grad1" style={{ width: "100%", height: "100%" }}>
           <div className="container">
             <div className="row">
               <div className="col-sm-6">
@@ -83,28 +71,48 @@ const First_Page = () => {
                   />
                 </p>
                 <hr className="line_break" />
-                <ButtonToolbar id="toolBar">
-                  <Button variant="light" id="primary_button">
+                <ButtonToolbar id="toolBar" style={{ padding: "5%" }}>
+                  <Button
+                    variant="light"
+                    id="primary_button"
+                    style={{ marginBottom: "5%" }}
+                  >
                     ADD TO CART . $79
                   </Button>
-                  <Button id="secondary_button" variant="outline-light">
+                  <Button
+                    id="secondary_button"
+                    variant="outline-light"
+                    style={{ marginBottom: "5%" }}
+                  >
                     Live Preview
                   </Button>
-                  <Button id="ternary_button" variant="secondary">
+                  <Button
+                    id="ternary_button"
+                    variant="secondary"
+                    style={{ marginBottom: "5%" }}
+                  >
                     Docs
                   </Button>
                 </ButtonToolbar>
               </div>
             </div>
           </div>
-          <div className="col" id="secondComponent">
+          <div id="secondComponent">
             <SecondJob />
           </div>
 
-          <LandingFreeDemo />
-          <LandingComment />
-          <Footer />
+          {/* <LandingFreeDemo />
+          <LandingComment /> */}
         </div>
+      </div>
+      <div className="row">
+        <LandingFreeDemo />
+      </div>
+      <div className="row">
+        <LandingComment />
+      </div>
+      <div className="row">
+        <Footer />
       </div>
     </div>
   );

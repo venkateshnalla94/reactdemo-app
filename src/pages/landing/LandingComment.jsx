@@ -5,12 +5,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAirFreshener, faComment } from "@fortawesome/free-solid-svg-icons";
 const LandingComment = () => {
   return (
-    <div className="landingComment">
+    <div className="landingComment" style={{ width: "100%" }}>
       <FontAwesomeIcon
         icon={faComment}
         style={{
           color: "grey",
-          width: "225px",
+          width: "15%",
           height: "auto",
           position: "absolute",
           marginLeft: "45%",
@@ -19,7 +19,11 @@ const LandingComment = () => {
         }}
       ></FontAwesomeIcon>
       <div className="row">
-        <div className="col-sm-7" id="feedback_container">
+        <div
+          className="col-sm-10"
+          id="feedback_container"
+          style={{ marginLeft: "10%", marginRight: "10%" }}
+        >
           <div className="container">
             <h3 className="d-flex justify-content-center" id="item_Demo">
               We are here to help you!

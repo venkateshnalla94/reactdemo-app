@@ -66,7 +66,7 @@ const Charts = () => {
             <Nav.Item style={{ marginRight: "15% ", marginLeft: "5%" }}>
               <Nav.Link
                 className="activeLinks d-flex justify-content-center"
-                href="/Landing_page"
+                href="/"
                 style={{ color: "white !important" }}
               >
                 Bugs

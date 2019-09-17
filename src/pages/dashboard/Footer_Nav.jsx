@@ -3,7 +3,7 @@ const Footer_Nav = () => {
   return (
     <div>
       <div className="row" style={{ fontWeight: "100" }}>
-        <div className="col-sm-2">Creative Tim</div>
+        <div className="col-sm-2">Cino Inv</div>
         <div className="col-sm-2">About US</div>
         <div className="col-sm-2">Blog </div>
         <div

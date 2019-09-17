@@ -135,18 +135,31 @@ const SecondJob = () => {
           <div className="col-sm-12 d-flex ">
             <div className="container">
               <p className="d-flex justify-content-center" id="contentDesc">
-                Now UI Kit PRO Reactis a premium Bootstrap 4 kit provided by
-                Invision and Creative Tim. It is built over React, React Hooks
-                and Reactstrap using Create React App. It is a beautiful
-                cross-platform UI kit featuring over 1000 components, 34
-                sections and 11 example pages.
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem. Ut enim ad minima veniam, quis nostrum
+                exercitationem ullam corporis suscipit laboriosam, nisi ut
+                aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                reprehenderit qui in ea voluptate velit esse quam nihil
+                molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                voluptas nulla pariatur?"
               </p>
 
               <p id="contentDesc_2">
-                Now UI Kit is one of the most popular UI Kits online, provided
-                in PSD and Sketch formats by Invision. We wanted to find a way
-                for developers worldwide to benefit from using it. We created
-                the fully coded version of Now UI Kit React
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum
               </p>
               <Button
                 className="d-flex justify-content-center"

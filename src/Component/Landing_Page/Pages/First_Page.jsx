@@ -28,7 +28,7 @@ const First_Page = () => {
         <Navbar expand="lg" variant="light" bg="dark">
           <Container>
             <Link id="navbar_content" href="#">
-              CreativeTim
+              Inventory
             </Link>
             <Link to="Dashboard" id="navbar_content" href="#">
               <FontAwesomeIcon icon={faSearch} style={{ cursor: "pointer" }} />
@@ -56,12 +56,12 @@ const First_Page = () => {
           <div className="container">
             <div className="row">
               <div className="col-sm-6">
-                <img src="https://s3.amazonaws.com/creativetim_bucket/products/171/original/opt_nukp_react_thumbnail.jpg?1564486765" />
+                <img src="https://www.unleashedsoftware.com/assets/uploads/2018/09/manufacturing-inventory.jpg" />
               </div>
               <div className="col-sm-6" id="desc">
-                <h1 id="item">Now UI Kit PRO React</h1>
+                <h1 id="item">Kit For Inventory </h1>
                 <h6 className="tagline" id="item_tagline">
-                  Premium Bootstrap 4 And Reactstrap Ui Kit
+                  Premium Bootstrap 4 And Material Design Ui Kit
                 </h6>
                 <p className="text-center">
                   License&nbsp;&nbsp;
@@ -77,7 +77,7 @@ const First_Page = () => {
                     id="primary_button"
                     style={{ marginBottom: "5%" }}
                   >
-                    ADD TO CART . $79
+                    ADD TO CART
                   </Button>
                   <Button
                     id="secondary_button"

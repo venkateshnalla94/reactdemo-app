@@ -40,7 +40,7 @@ const Footer = () => {
                 </div>
 
                 <div className="col-sm-3">
-                  <h6 id="subEmail">Join our newsletter</h6>
+                  <h6 id="subEmail">Join Us</h6>
                   <input
                     id="emailBox"
                     type="email"

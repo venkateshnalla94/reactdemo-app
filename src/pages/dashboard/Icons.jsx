@@ -49,7 +49,7 @@ const Icons = () => {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/ytp30ybm3IE"
+              src="https://youtu.be/HL1-Be71URU"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
